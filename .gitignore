@@ -1,2 +1,86 @@
+# Sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Archivos de log temporales
+*.log
+*.tmp
+*.swp
+
+# Archivos de compilación
+*.out
+*.o
+*.obj
+*.exe
+*.class
+
+# Archivos de paquetes
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Archivos de configuración de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistema de control de versiones
+*.orig
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer / PHP
+vendor/
+composer.lock
+
+# Laravel / Symfony
+.env
+.env.*
+storage/
+bootstrap/cache/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ruby
+*.gem
+.bundle/
+log/
+tmp/
+
+# Java
+target/
+*.war
+*.ear
+
+# Otros
+coverage/
+.cache/
+.pnp/
+.pnp.js
+
+# Ignorar carpetas llamadas 'upfiles' en cualquier parte del proyecto
 **/upfiles/
-**/node_modules/
+
+# Archivos personales
+*.local
+*.env.local
+*.secret
