@@ -1,0 +1,28 @@
+.animar h3.title{
+    opacity: 0;
+    transition: all 0.7s 0.3s;
+    transform: translateY(20%);
+}
+.animar .centered p{
+    opacity: 0;
+    transition: all 0.7s 0.5s;
+    transform: translateY(30%);
+}
+.animar .btnmore{
+    opacity: 0;
+    transition: all 0.7s 0.7s;
+    transform: translateY(40%);
+}
+
+.animar.active h3.title{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.animar.active .centered p{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.animar.active .btnmore{
+    opacity: 1;
+    transform: translateY(0%);
+}

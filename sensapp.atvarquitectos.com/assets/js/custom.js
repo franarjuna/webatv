@@ -1,0 +1,239 @@
+var isMobile = false; //initiate as false
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  isMobile = true;
+ }
+$(document).ready(function(){
+    $('.navbars').click(function(){
+        if($(this).hasClass('active')){
+            $(this).removeClass('active');
+            $('.navmenu').removeClass('active');
+        }else{
+            $(this).addClass('active');
+            $('.navmenu').addClass('active');
+        }
+    });
+
+    $( window ).resize(function() {
+      var wh = $(window).height();
+      var mapacentrado = $('.mapacentrado').height();
+      var margen = wh - mapacentrado;
+      margen = (margen/2);
+      if(margen < 100){
+        margen = 100;
+      }else{
+        margen = margen + 40;
+      }
+      
+      var ww = $(window).width();
+      if(ww < 700){
+        margen = 100;
+      }
+      $('.mapacentrado').css('margin-top', margen + 'px');
+    });
+
+
+    $(window).scroll(); 
+
+    var wh = $(window).height();
+    var mapacentrado = $('.mapacentrado').height();
+    var margen = wh - mapacentrado;
+    margen = (margen/2);
+    if(margen < 100){
+      margen = 100;
+    }else{
+      margen = margen + 40;
+    }
+    var ww = $(window).width();
+    if(ww < 700){
+      margen = 100;
+    }
+    $('.mapacentrado').css('margin-top', margen + 'px');
+
+    $('.unidadfilter li').click(function(e){
+      e.preventDefault();
+      if($(this).hasClass("active")){
+        $(this).removeClass("active");
+      }else{
+        $(this).addClass("active");
+      }
+      $('.pisos').removeClass("active");
+      var piso1 = 0;
+      var piso2 = 0;
+      var piso3 = 0;
+      var piso4 = 0;
+      var piso5 = 0;
+      var piso6 = 0;
+      var filtros = [];
+      $('.unidadfilter li.active').each(function(){
+        var filtro = $(this).data("filtro");
+        //piso1 = 1;
+        var splitfiltro = filtro.split(":");
+        filtros.push({tipo:splitfiltro[0],valor:splitfiltro[1]})
+      });
+      var filtrado = 0;
+      for(a = 0;a<filtros.length;a++){
+        if(filtros[a].tipo == 'tipo'){
+          if(filtros[a].valor == 'balcon'){
+            var piso1 = piso1 + 1;
+            var piso2 = piso2 + 1;
+            var piso3 = piso3 + 1;
+            var piso4 = piso4 + 1;
+            filtrado = 1;
+          }else if(filtros[a].valor == 'dpiscina'){
+            var piso4 = piso4 + 1;
+            filtrado = 1;
+          }else if(filtros[a].valor == 'triplex'){
+            var piso6 = piso6 + 1;
+            filtrado = 1;
+          }
+        }else if(filtros[a].tipo == 'amb'){
+          for(x = 0;x<unidades.length;x++){
+            if(unidades[x].ambientes == filtros[a].valor){
+              eval("evalpiso = piso" + unidades[x].piso);
+              if(filtrado!=1 || (filtrado==1 && evalpiso!=0) ){
+                eval("piso" + unidades[x].piso + " = piso" + unidades[x].piso + " + 1");
+              }
+            }
+          }
+        }else if(filtros[a].tipo == 'sup'){
+          var rango = filtros[a].valor.split("-");
+          var min = Number(rango[0]);
+          var max = Number(rango[1]);
+          for(x = 0;x<unidades.length;x++){
+            var supu = Number(unidades[x].superficie);
+            if(supu >= min && supu <= max){
+              eval("evalpiso = piso" + unidades[x].piso);
+              if(filtrado!=1 || (filtrado==1 && evalpiso!=0) ){
+                eval("piso" + unidades[x].piso + " = piso" + unidades[x].piso + " + 1");
+              }
+            }
+          }
+        }
+      }
+      if(piso1 > 0 && piso1 >= filtros.length){
+        $("#piso1").addClass("active");
+      }
+      if(piso2 > 0 && piso2 >= filtros.length){
+        $("#piso2").addClass("active");
+      }
+      if(piso3 > 0 && piso3 >= filtros.length){
+        $("#piso3").addClass("active");
+      }
+      if(piso4 > 0 && piso4 >= filtros.length){
+        $("#piso4").addClass("active");
+      }
+      if(piso5 > 0 && piso5 >= filtros.length){
+        $("#piso5").addClass("active");
+      }
+      if(piso6 > 0 && piso6 >= filtros.length){
+        $("#piso6").addClass("active");
+      }
+      
+
+    });
+
+    $('.bgsechover').hover(function(){
+      $(this).css("background-repeat","no-repeat");
+      $(this).css("background-blend-mode","multiply");
+      $(this).css("background-color","rgba(0, 0, 0, 0.6)");
+    },function(){
+      $(this).css("background-blend-mode","unset");
+      //$(this).css("background-color","none");
+    });
+
+    $(document).on("click",".pisos",function(){
+      $('.pisos').removeClass("active");
+      $(this).addClass("active");
+      var ide = $(this).attr("id");
+      $('.pisosdiv').fadeOut(300);
+        $.ajax({url: "/pisos/" + ide, success: function(result){
+          $('.pisosdiv').html(result).fadeIn(500);
+        }});
+    });
+    $(document).on("click",".volver",function(){
+      $('.cargaunidad').fadeOut(300,function(){
+        $('.cargaunidad').html('');
+      });
+    });
+    $(document).on("click",".unidades",function(){
+      var ide = $(this).attr("id");
+      $('.cargaunidad').fadeOut(300);
+        $.ajax({url: "/unidad/" + ide, success: function(result){
+          $('.cargaunidad').html(result).fadeIn(500);
+        }});
+    });
+
+
+
+});
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 120) {
+      $("#header").addClass("active");
+      $(".floatatvlogo").fadeOut(300);
+    }else{
+      if(!$("#header").hasClass("activofijo")){
+        $("#header").removeClass("active");
+      }
+      
+      $(".floatatvlogo").fadeIn(300);
+    }
+  });
+
+  document.addEventListener('aos:in', ({ detail }) => {
+    var ide = detail.id;
+    var element = document.getElementById(ide);
+    element.classList.add("active");
+  });
+  
+  document.addEventListener('aos:out', ({ detail }) => {
+    var ide = detail.id;
+    var element = document.getElementById(ide);
+    element.classList.remove("active");
+  });
+
+  const FloatLabel = (() => {
+  
+    // add active class
+    const handleFocus = (e) => {
+      const target = e.target;
+      target.parentNode.classList.add('active');
+      //target.setAttribute('placeholder', target.getAttribute('data-placeholder'));
+    };
+    
+    // remove active class
+    const handleBlur = (e) => {
+      const target = e.target;
+      if(!target.value) {
+        target.parentNode.classList.remove('active');
+      }
+      target.removeAttribute('placeholder');
+    };
+    
+    // register events
+    const bindEvents = (element) => {
+      const floatField = element.querySelector('input');
+      floatField.addEventListener('focus', handleFocus);
+      floatField.addEventListener('blur', handleBlur);    
+    };
+    
+    // get DOM elements
+    const init = () => {
+      const floatContainers = document.querySelectorAll('.form-group');
+  
+      floatContainers.forEach((element) => {
+  
+        if (element.querySelector('input').value) {
+          element.classList.add('active');
+        }
+  
+        bindEvents(element);
+      });
+    };
+    
+    return {
+      init: init
+    };
+  })();
+  
+  FloatLabel.init();

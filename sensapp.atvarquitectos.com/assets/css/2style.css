@@ -1,0 +1,573 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --main-bg-green: #00F379;
+    --main-bg-fblue: #162D5F;
+    --main-bg-blue: #004C73;
+
+}
+
+q::after,
+q::before {
+    content: "";
+}
+
+@font-face {
+    font-family: "Canela";
+    src: url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.eot");
+    src: url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.woff") format("woff"), url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b1edfa746f416280b3502ba39df2c3ae.svg#Canela") format("svg");
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bgytxt{
+    /*background-image: url('img/background-home.png');*/
+    background-position: center center;
+    background-size: cover;
+}
+#home {
+    /*background-image: url('img/background-home.png');*/
+    background-position: center center;
+    background-size: cover;
+}
+
+#proyectohome {
+    background-image: url('img/proyecto-home_1.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#proyecto {
+    /*background-image: url('img/proyecto.jpg');*/
+    background-position: center center;
+    background-size: cover;
+}
+
+#ubicacion {
+    background-image: url('img/ubicacion-home.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#openers {
+    background-image: url('img/openers-home.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#unidades {
+    background-image: url('img/unidades-home.png');
+    background-position: center center;
+    background-size: cover;
+}
+
+#amenities {
+    background-image: url('img/amenities.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+#equipo {
+    background-image: url('img/equipo.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#universo {
+    background-image: url('img/universo.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#vision {
+    background-image: url('img/vision.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#curaduria {
+    background-image: url('img/curaduria.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+#curaduriasection {
+    background-image: url('img/curaduria-section.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+video{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    z-index: 0;
+  }
+  @media (max-width:575.98px) {
+    video{
+      height: 100%;
+      width: auto;
+      position: absolute;
+      top: 0px;
+      left:0px;
+      z-index: 0;
+    }
+  }
+
+.green {
+    color: var(--main-bg-green);
+}
+section {
+    position: relative;
+}
+section.bgytxt {
+    min-height: 100vh;
+}
+
+#header.active {
+    /*background-color: var(--main-bg-fblue);*/
+    background-color: rgba(255,255,255,0.95);
+}
+#header {
+    position: fixed;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+}
+.mainlogo{
+    width: 290px;
+}
+.navmenu {
+    height: 30px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.navmenu ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    text-align: right;
+    float: right;
+    transform: translateX(130%);
+    transition: all 0.6s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+    margin-top: -7px;
+    margin-right: 15px;
+}
+
+.navmenu.active ul {
+    transform: translateX(0%);
+}
+
+.navmenu ul li {
+    display: inline;
+    color: #fff;
+    padding: 6px 12px;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+}
+.navmenu ul li a:hover {
+    text-decoration: none;
+
+}
+.navmenu ul li a {
+    padding-bottom: 5px;
+    color:#fff;
+    position: relative;
+}
+#header.active .navmenu ul li a{
+    color:var(--main-bg-fblue);
+}
+.floatatvlogo{
+    position: fixed;
+    left:65px;
+    bottom:50px;
+    background-image: url(img/logo-atv.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 115px;
+    z-index: 105;
+    transition: opacity 0.3s ease-in-out;
+    transition: visibility 0s, opacity 1.1s linear;
+}
+.floatatvlogo.hid{
+    visibility: hidden;
+    opacity: 0;/**/
+}
+.floatatvlogo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.navmenu ul li a:hover:before {
+    width: 100%;
+}
+.navmenu ul li a::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 0;
+    bottom: -3px;
+    z-index: 0;
+    position: absolute;
+    background: var(--main-bg-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbars {
+    width: 30px;
+    float: right;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    position: relative;
+    display: block;
+    height: 30px;
+}
+
+.navbars span {
+    display: inline-block;
+    background-color: var(--main-bg-green);
+    height: 3px;
+    width: 100%;
+    margin-bottom: 6px;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.navbars span {
+    transform: translateY(0px);
+}
+
+.navbars span+span {
+    transform: translateY(9px);
+}
+
+.navbars span+span+span {
+    transform: translateY(18px);
+    display: none;
+}
+
+.navbars.active span {
+    transform: translate(0px, 10px) rotate(-45deg);
+
+}
+
+.navbars.active span+span {
+    transform: translate(0px, 10px) rotate(45deg);
+}
+
+.navbars.active span+span+span {
+    display: none;
+}
+
+h3.title {
+    color: #fff;
+    text-align: center;
+    font-family: "Canela";
+    font-size: 45px;
+    line-height: 1.3em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    transition: all 0.5s ease;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 42vw;
+    text-align: center;
+    z-index: 1;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 3em;
+}
+
+.btnmore {
+    color: #fff !important;
+    border: 1px solid #fff;
+    border-radius: 35px;
+    line-height: 35px !important;
+    padding: 0px 20px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btnmore:hover {
+    background-color: rgba(0,243,121,0.3);
+    background-color: rgba(255,255,255,0.3);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #162D5F;
+    height: 300px;
+    padding-top: 30px;
+    padding-left: 50px;
+    color: #fff;;
+}
+.logoblanco{
+    width: 275px;
+}
+.logofooter{
+    /*opacity: 0;*/
+}
+.developers p{
+    vertical-align: bottom;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    font-size:14px;
+}
+.developers img{
+    vertical-align: bottom;
+    margin-right: 20px;
+}
+.quotegreen {
+    background-color: var(--main-bg-green);
+}
+footer ul a{
+    color:#fff;
+}
+footer ul a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+footer ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    margin-right: 50px;
+}
+
+.quotegreen q {
+    color: #004C73;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    font-family: "Canela";
+    font-size: 45px;
+    line-height: 1.3em;
+    font-weight: normal;
+    margin-bottom: 1em;
+    display: block;
+    margin: 100px auto 40px auto;
+}
+
+.quotegreen p {
+    width: 50%;
+    color: var(--main-bg-blue);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3em;
+    font-weight: normal;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 80px;
+}
+
+h4.title {
+    color: var(--main-bg-green);
+    text-align: center;
+    font-family: "Canela";
+    font-size: 48px;
+    line-height: 1.05em;
+    font-weight: normal;
+    margin: 1.5em 0;
+}
+
+.textnpic p {
+    color: var(--main-bg-blue);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6em;
+    margin-bottom: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.martitegui{
+    background-image: url(img/martitegui.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.battistelli{
+    background-image: url(img/battistelli.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.paiva{
+    background-image: url(img/paiva.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+.arrowdown{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 2px;
+}
+.gallerythumbs h6{
+    color:#fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+@media (max-width: 1280px) {
+    .textnpic p {
+        color: var(--main-bg-blue);
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 92%;
+    }
+    h4.title {
+        color: var(--main-bg-green);
+        text-align: center;
+        font-family: "Canela";
+        font-size: 44px;
+        line-height: 1.05em;
+        font-weight: normal;
+        margin: 0.8em 0;
+    }
+}
+#contactosection{
+    color:var(--main-bg-blue);
+    padding: 30px 50px;
+    padding-top:100px;
+}
+#contactosection p{
+    color:var(--main-bg-blue);
+    font-family: "Canela";
+    font-size: 24px;
+    text-align: left;
+}
+#contactosection p.small{
+    color:var(--main-bg-blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:14px;
+    text-align: left;
+}
+#contactosection h1{
+        font-family: "Canela";
+        font-size: 44px;
+        color:var(--main-bg-blue);
+        padding:40px 0px;
+}
+#contactosection input[type=text]{
+    border-radius: 40px;
+    border: 1px solid var(--main-bg-blue);
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+#contactosection textarea{
+    border-radius: 15px;
+    border: 1px solid var(--main-bg-blue);
+}
+#contactosection label{
+    position: absolute;
+    left:18px;
+    top:6px;
+    background-color:#fff;
+    padding:2px;
+    transform: translateY(0px);
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.68, 0.01, 0.22, 0.99);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:14px;
+}
+#contactosection .form-group.active label{
+    transform: translateY(-16px);
+    z-index: 2;
+    font-size:11px;
+}
+#contactosection button{
+    border: 1px solid var(--main-bg-green);
+    color:var(--main-bg-blue);
+    padding:8px 20px;
+    border-radius: 40px;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.form-group{
+    position: relative;
+}
+#contactosection ul{
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+    margin-bottom: 40px;
+}
+#contactosection ul li{
+    display: inline;
+    padding-right: 50px;
+}
+#contactosection ul li a i{
+    color: var(--main-bg-green);
+    font-size: 20px;
+    padding-right: 5px;
+}
+#contactosection ul li a{
+    font-family: "Canela";
+    font-size: 20px;
+    color:var(--main-bg-blue);
+}
+#contactosection p.equipo{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.bottomeddiv div{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+.bottomeddiv{
+    position: relative;
+    float:left; margin-left:30px;height:100%;width: 250px;
+}
+.desarrolloyarq{
+    height: 110px;    
+    width: 100%;
+}
