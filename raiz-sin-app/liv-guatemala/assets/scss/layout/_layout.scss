@@ -1,0 +1,69 @@
+/* ==|====================
+   Layout/Header
+   ======================= */
+.site-content{
+	 
+}
+.row, .row-2, .row-small{    
+    margin: 0 auto;    
+}
+.row{
+    width: 100%;
+     
+    @include from(960px){
+        width: 87%;
+    }
+    @include from(xl){
+        width: 100%;
+        max-width: 1400px;
+    }
+}
+.row-2{  
+    width: 100%;
+     
+    @include from(960px){
+        width: 95%;
+    }
+    @include from(xl){
+        width: 100%;
+        max-width: 1430px;
+    }
+} 
+.row-small{ 
+    width: 100%;
+    @include from(m){
+        width: 80%;        
+    }
+   @include from(xl){
+       width: 100%;
+       max-width: 1100px;
+   }
+}
+
+//header
+.button-scroll{
+    position: fixed;
+    right: 0;
+    background-color: #000;
+    color: #fff;
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999999;    
+    @include from(l){
+        display: inline-block;
+    }
+}
+
+
+.phone-svg{
+    fill: #fff;
+}
+#Capa_1{
+    width: 15px;
+    height: 15px;  
+    @include from(m){
+        width: 22px;
+        height: 22px ; 
+    }
+}

@@ -1,0 +1,114 @@
+  
+.footer-top{
+    with: 100%;
+    background-color: $verde-agua;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include from(m){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include from(l){
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .footer-desc{
+        margin-top: 50px;
+        @include from(m){
+            margin-top: 0px;
+        }
+    }
+    .footer-logo, .footer-desc{
+        @include fromTo(640px, 960px){
+            width: 100%;
+        }   
+    }
+    .footer-logo{
+        .footer-logos-footer{
+            @include fromTo(640px, 960px){
+                display: none !important
+            } 
+        }
+    }
+    p{
+        color: #fff;
+        margin-bottom: 15px;
+    }
+    .heading, .heading-light{
+        color: #fff;
+    }
+    form{
+        margin-top: 35px;
+    }
+}
+.footer-bottom{
+    padding: 15px 0;
+    .copyright{
+        p{
+            color: #c5c5c5;
+            font-size: 0.687em;
+            margin: 0;
+            @include from(m){
+                font-size: 0.8125em;
+            }
+            @include from(xl){
+                font-size: 0.875em;
+            }
+            span{                
+                @include to(m){
+                    display: block;
+                }
+                &.negrita{
+                    color: #2e2e2e;
+                }
+            }            
+        }
+    }
+}
+.heading-footer{
+    margin-bottom: 15px;
+    @include from(l){
+        margin-bottom: 25px;
+    }
+}
+.logo-footer{    
+    @include to(m){
+        max-width: 70%;
+    }
+    .img-responsive{
+        max-width: 270px;
+    }
+
+}
+.footer-logos-footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: auto;
+    .img-responsive{
+        // display: inline-block;
+        // vertical-align: top;
+        // max-width: 45%;
+        // &:first-child{
+        //     margin-right: 5%;
+        // }
+    }
+}
+.footer-logos{
+    margin-top: 40px;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;     
+    width: 100%;
+    text-align: center;
+    @include fromTo(640px, 960px){
+        display: block !important;
+        text-align: left;
+    }
+    .img-responsive{
+        display: inline-block;
+        vertical-align: top;
+        max-width: 45%;
+        &:first-child{
+            margin-right: 5%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.animar h4.title,
+.animar h3.title{
+    opacity: 0;
+    transition: all 0.7s 0.1s;
+    transform: translateY(20%);
+}
+.animar p{
+    opacity: 0;
+    transition: all 0.7s 0.3s;
+    transform: translateY(30%);
+}
+.animar .caranimado{
+    opacity: 0;
+    transition: all 0.7s;
+    transform: translateY(10%);
+}
+.animar .btnmore{
+    opacity: 0;
+    transition: all 0.7s 0.4s;
+    transform: translateY(40%);
+}
+.animar .quotegreen q{
+    opacity: 0;
+    transition: all 0.7s;
+    transform: translateY(5%);
+}
+
+.animar.active h4.title,
+.animar.active h3.title,
+.animar.active .caranimado,
+.animar.active p,
+.animar.active .quotegreen q,
+.animar.active .quotegreen p,
+.animar.active .btnmore{
+    opacity: 1;
+    transform: translateY(0%);
+}

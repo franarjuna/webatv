@@ -1,0 +1,159 @@
+.header{
+	background: transparent url('../img/hero-mobile.jpg') 0 0 no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 615px;
+	@include from(m){	 
+		background-image: url('../img/hero-tablet.jpg');
+		height: 770px;
+	}
+	@include from(l){	 
+		background-image: url('../img/hero.jpg');
+		height: 850px;
+		overflow: hidden;
+	}
+	@include from(xl){	 
+		height: 1080px;
+	}
+	.content-header{
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+		.header-top{
+			max-height: 130px;
+			background-color: rgba(0,0,0,0.3);
+			@include from(l){	 
+				max-height: 204px;
+			}
+			> div{
+				padding-top: 15px;				 				
+				&:first-child{ 
+					padding-left: 20px;
+					padding-bottom: 30px;
+					@include from(360px){	
+						padding-left: 25px; 
+					}
+					@include from(m){	 
+						padding-bottom: 50px;
+					}
+					@include from(l){	 
+						padding-left: 6.5% !important;
+						width: 47.91%;
+						padding-top: 15px;
+					}
+					@include from(xl){	 
+						padding-left: 11% !important; 
+						padding-top: 30px;
+					}
+				}
+				&:last-child{
+					@include from(l){	 
+						padding-right: 9% !important;
+						width: 52.09%;
+					}
+					@include from(xl){	 
+						padding-right: 12.91% !important; 						
+					}
+				}
+				.txtright{
+					position: absolute;
+					padding: 10px 20px 0 0;
+					top: 0;
+					right: 0;
+					@include from(360px){	
+						padding: 12px 25px 0 0;
+					}
+					@include from(l){	
+						position: initial;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	.hero-img{
+		visibility: hidden;
+	}
+	.header-video, video{
+		height: 100%; 
+	}
+	.text-video{
+		padding-top: 83px;
+		@include mainCenter;
+		@include crossCenter;
+		text-align: center;
+		@include from(m){	 
+			padding-top: 12.5%;
+		}
+		@include from(xl){	 
+			padding-top: 260px;
+		}
+		h2,p{
+			color: #fff;
+		}
+		h2{
+			font-size: 28.95px;
+			line-height: 1.3em;
+			margin-bottom: 15px;
+			@include from(m){	
+				font-size: 53px;
+			} 
+		}
+		p{
+			font-size: 15px;
+			@include from(m){	
+				font-size: 22px;
+			}
+		}
+		.btn{
+			padding: 5px 10px 5px 35px;
+			margin-top: 70px;			
+			&:hover{
+				path{
+					fill: $third-color; 
+				}
+			}
+			svg{ 
+				path{
+					fill: #fff; 
+				} 
+			}
+			span, svg{
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.logo{
+	position: relative;
+	z-index: 2;
+	padding-left: 20px;
+	@include from(m){	
+		padding-left: 25px;
+	}
+	.img-logo{ 
+		width: 130px;
+		height: 90px;
+		background: transparent url('../img/logo.svg') no-repeat 0 center;
+		@include from(360px){			
+			width: 170px;
+			height: 107px;			
+		} 
+		@include from(m){ 
+			height: 115px;
+		}
+		@include from(l){	
+			width: 300px; 
+		}
+		@include from(1280px){	
+			width: 350px; 
+		}
+		@include from(xl){	
+			width: 380px; 
+		}
+		@include from(1700px){	
+			width: 490px; 
+		} 
+	}
+}

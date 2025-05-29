@@ -1,0 +1,90 @@
+/* ===========================
+   Base
+   =========================== */
+body, html{
+    width: 100%;
+    padding: 0;  
+    margin: 0;
+    background: #fff;
+    font-size: 16px;
+    font-family: 'gravity-regular';
+    min-height: 100%;
+    position: relative; 
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {     
+    text-decoration: none;      
+    &:hover {
+        text-decoration: none;      
+    }
+    
+}
+
+::-moz-selection {
+    // background: $color_text;
+    // color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #3390ff;
+    color: #fff;
+    text-shadow: none;
+}
+p{
+    margin-bottom: 15px;
+    line-height: 1.1875em;
+    @include from(m){
+        margin-bottom: 20px;
+    }
+    @include from(l){
+        margin-bottom: 25px;
+    }
+    // @include from(xl){
+    //     margin-bottom: 30px;
+    // }
+}
+p, li{     
+    font-family: 'gravity-book';
+    font-size: 0.875em;
+    margin-top: 0 ;
+    @include from(l){
+        font-size: 0.9375em;
+    }
+    @include from(l){
+        font-size: 1em;
+    }
+    @include from(xl){
+        font-size: 1.0625em;
+    }
+    
+} 
+b, strong{  
+    font-family: 'gravity-bold';
+} 
+ul{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+a[href^="tel"]{
+    color: #fff;
+    text-decoration:none;
+    transition: all .5s;     
+    &:hover{
+        .phone-svg{
+            fill: #fff;
+        }
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}

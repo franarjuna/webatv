@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[Liv Guatemala]]></data>
+
+
+
+  <data name="en_pano73_title"><![CDATA[Liv Guatemala | Exterior]]></data>
+  <data name="en_spotpoint556_tooltip"><![CDATA[2ºA]]></data>
+  <data name="en_spotpoint557_tooltip"><![CDATA[2ºB]]></data>
+  <data name="en_spotpoint558_tooltip"><![CDATA[8ºA]]></data>
+  <data name="en_spotpoint755_tooltip"><![CDATA[Amenities]]></data>
+
+  <data name="en_panogroup76_title"><![CDATA[Piso 2º]]></data>
+
+  <data name="en_pano75_title"><![CDATA[SENS Guatemala | Unidad A]]></data>
+  <data name="en_spotpoint564_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_spotpoint697_tooltip"><![CDATA[Planta alta]]></data>
+  <data name="en_pano621_title"><![CDATA[ATV_GUA_360_2º_UºA_PA]]></data>
+  <data name="en_spotpoint628_tooltip"><![CDATA[Planta baja]]></data>
+  <data name="en_pano77_title"><![CDATA[SENS Guatemala | Unidad B]]></data>
+  <data name="en_spotpoint641_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_pano79_title"><![CDATA[SENS Guatemala | Unidad C]]></data>
+  <data name="en_spotpoint565_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_pano81_title"><![CDATA[SENS Guatemala | Unidad D]]></data>
+  <data name="en_spotpoint566_tooltip"><![CDATA[Exterior]]></data>
+
+  <data name="en_panogroup546_title"><![CDATA[Piso 8º _ Frente]]></data>
+
+  <data name="en_pano83_title"><![CDATA[SENS Guatemala | Unidad 8vo_Unidad A]]></data>
+  <data name="en_spotpoint553_tooltip"><![CDATA[Planta alta]]></data>
+  <data name="en_spotpoint563_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_pano549_title"><![CDATA[ATV_GUA_360_8º_Frente_02]]></data>
+  <data name="en_spotpoint554_tooltip"><![CDATA[Planta baja]]></data>
+  <data name="en_spotpoint555_tooltip"><![CDATA[Terraza]]></data>
+  <data name="en_spotpoint560_tooltip"><![CDATA[Dormitorio]]></data>
+  <data name="en_pano550_title"><![CDATA[ATV_GUA_360_8º_Frente_03]]></data>
+  <data name="en_spotpoint561_tooltip"><![CDATA[Escalera]]></data>
+  <data name="en_pano543_title"><![CDATA[ATV_GUA_360_Terraza_Frente]]></data>
+  <data name="en_spotpoint562_tooltip"><![CDATA[Planta baja]]></data>
+
+  <data name="en_panogroup84_title"><![CDATA[Piso 8º _ Contrafrente]]></data>
+
+  <data name="en_pano85_title"><![CDATA[SENS Guatemala | Unidad 8vo_Unidad D]]></data>
+  <data name="en_spotpoint567_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_spotpoint615_tooltip"><![CDATA[Planta alta]]></data>
+  <data name="en_pano613_title"><![CDATA[ATV_GUA_360_8º_Contrafrente_03]]></data>
+  <data name="en_spotpoint616_tooltip"><![CDATA[Terraza]]></data>
+  <data name="en_spotpoint618_tooltip"><![CDATA[Planta baja]]></data>
+  <data name="en_pano542_title"><![CDATA[ATV_GUA_360_Terraza_Contrafrente]]></data>
+  <data name="en_spotpoint617_tooltip"><![CDATA[Planta baja]]></data>
+
+
+  <data name="en_pano519_title"><![CDATA[SENS Guatemala | Amenities]]></data>
+  <data name="en_spotpoint751_tooltip"><![CDATA[2ºD]]></data>
+  <data name="en_spotpoint752_tooltip"><![CDATA[2ºC]]></data>
+  <data name="en_spotpoint753_tooltip"><![CDATA[8ºD]]></data>
+  <data name="en_spotpoint754_tooltip"><![CDATA[Exterior]]></data>
+
+
+
+
+
+
+  <data name="en_buttontooltip"><![CDATA[]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

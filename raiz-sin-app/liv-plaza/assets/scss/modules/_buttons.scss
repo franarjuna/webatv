@@ -1,0 +1,80 @@
+/* ==|====================
+   Module/Button
+   ======================= */
+.btn{ 
+    background-color: $third-color;
+	color: #fff; 
+	cursor:pointer;
+	display: inline-block;
+	font-family: "gravity-bold";
+	font-size: 14px;
+	text-transform: uppercase; 
+	margin: 0;
+	transition: all .5s;  
+	padding: 10px 12px;
+	border: 2px solid $third-color;
+	border-radius: 2em;
+	text-decoration:none;
+
+	&:hover{
+		color: $third-color;
+        background-color: #fff;
+	}
+	&.tel{
+		font-size: 10px;
+		padding: 5px 9px;  
+		> span, svg{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.phone-svg{
+			fill: #fff; 
+		}
+		&:hover{
+			.phone-svg{
+				fill: $third-color; 
+			}
+		}		 
+		@include from(360px){
+            font-size: 11.7px;
+            padding: 7px 15px;
+		}
+		@include from(m){
+            font-size: 15px;
+		}
+		@include from(l){
+			font-size: 16px;
+			padding: 10px 27px;
+		}
+		@include from(xl){
+			font-size: 18.86px; 
+			padding: 10px 27px;
+		}
+	}	 
+	&.button-submit{
+		width: 140px;
+		height: 45px;
+		justify-content: space-between; 
+		color: #fff; 
+		padding: 0px 13px 0px 23px;
+		border-radius: 1.5em;
+		text-align: left;
+		@include from(xl){
+            width: 148px;
+		    height: 50px;
+		}
+		&:hover{ 
+			color: $third-color;
+			.arrow-right{
+				background-position: 0 0;
+			}
+		}
+		.arrow-right{
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -5.5px;
+		}
+	}
+}		
+ 

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+// Html 5 Element
+$audio-canvas-video: false; // True | False 
+
+@include fontFace('gravity-light', 'gravity', 'Gravity-Light', "normal", "normal");
+//@include fontFace('gravity-medium', 'gravity', 'Gravity Medium', "normal", "normal");
+@include fontFace('gravity-book', 'gravity', 'Gravity-Book', "normal", "normal");
+//@include fontFace('gravity-black', 'gravity', 'Gravity-Black', "normal", "normal");
+@include fontFace('gravity-bold', 'gravity', 'Gravity-Bold', "normal", "normal");
+@include fontFace('gravity-regular', 'gravity', 'Gravity-Regular', "normal", "normal");
+
+ 
+
+// = Colors 
+$marron: #403931; 
+$marron-claro: #b98e58; 
+$verde: #537c3c; 
+$verde-claro: #657c28; 
+$verde-agua: #3a6a5d;
+$gris: #6d6d6d;
+$gris-claro: #beb8b1;
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+ 
+
+// = Responsive
+$mobile_slider: 800px;
+$tablet: 768px;
+// -----------------------------
+ 

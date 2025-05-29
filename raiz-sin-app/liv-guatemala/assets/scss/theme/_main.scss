@@ -1,0 +1,1108 @@
+/* ==|====================
+   Main Page
+   ======================= 
+*/
+.site{
+    width: 100%; 
+    max-width: 1920px;
+    overflow: hidden;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.section-edificio{
+    z-index: 1;
+    position: relative;
+    padding-bottom:15px;
+    @include to(m){
+        flex-direction: column-reverse;
+    }
+    @include fromTo(640px, 960px){
+        flex-direction: column;
+    }
+    @include from(m){
+        padding-bottom:25px;
+    }
+    @include from(l){
+        padding-bottom:30px;
+    }
+    > div{
+        @include fromTo(640px, 960px){
+            width: 100% !important;
+        }
+    }
+    p{
+        width: 100%;
+    }
+}
+img.edificio{
+    padding-top: 15px;
+    @include from(m){
+        padding-top: 0;
+        transform: translate(0,-9.4%); 
+    }
+    @include from(960px){ 
+        transform: translate(0,-4.4%); 
+    }
+}
+.frase-edificio{
+    padding-top: 25px;
+    @include to(960px){
+        padding-left: 0.9375em !important;
+        padding-right: 0.9375em !important;  
+    }
+    @include from(m){         
+        padding-top: 40px;
+    }
+    @include from(960px){
+        padding-top: 26%;
+    }
+
+    @include fromTo(640px, 960px){
+        position: relative;
+        z-index: 10;
+    }
+    
+    .custom-heading{ 
+        top: 17.5%;
+        z-index: 2;
+        margin-bottom:30px;
+        @include from(960px){ 
+            margin-bottom:0px;
+            position: absolute;
+        }
+    }
+    .custom-heading, p{
+        @include fromTo(640px, 960px){
+            width: 100%; 
+        }
+    }
+}
+
+/* =================== Seccion Unidades =====================*/
+.container-unidades{
+    margin-top:140px;
+    @include from(m){
+        margin-top:0px; 
+    }
+    .edificio-departamentos{
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;        
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-position: center center;
+        @include from(m){
+            padding-top: 50px;
+            padding-bottom: 50px; 
+        }
+        @include from(l){
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        >img{
+            visibility:  hidden;
+            display: none; 
+            @include from(960px){
+                display: initial;
+            }
+        } 
+    }
+    .floor-buttons{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        display: flex;
+        justify-content: center;
+        @include from(960px){
+            position: absolute;
+        }
+        .piso, .dpto{
+            text-align: center;
+            color: #fff; 
+            > div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                font-family: 'gravity-regular';
+                font-size: 13px;
+                @include from(m){
+                    font-size: 15px;
+                }
+                @include from(l){
+                    font-size: 16px;
+                }
+                @include from(xl){
+                    font-size: 18px;
+                }
+            }
+        }
+        .dpto{
+            background-color: rgba(101,124,40, 0.8) ;
+            cursor:pointer;
+            &:hover{
+                color: #4d4d4d;
+                background: rgba(255,241,182,0.8);
+            }
+        }
+        .piso{
+            background-color: rgba(191,191,191, 0.8) ;            
+            div{
+                color: #393939
+            }
+        }
+        > div{
+            width: 95%;
+            padding-top: 20px;
+            @include from(640px){
+                width: 80%;
+                padding-top: 27px; 
+            }
+             
+            @include from(l){
+                width: 60.22%;
+                padding-top: 27px; 
+            }
+            @include from(xl){
+                width: 46.22%;
+                padding-top: 27px; 
+            }
+        }
+    }
+    .grid{ 
+        display: grid;
+        grid-template-columns: repeat(5, 3fr);  
+        grid-template-rows: repeat(11, 30px);
+        grid-gap: 10px 10px;
+        @include from(480px){
+            grid-gap: 10px 10px;
+        }
+        @include from(m){
+            grid-template-rows: repeat(11, 30px);
+        }
+        @include from(l){
+            grid-template-rows: repeat(11, 40px);
+        }
+        @include from(xl){
+            grid-template-rows: repeat(11, 50px);
+            grid-gap: 15px 15px;
+        }
+        .triplex{
+              grid-row: span 3;
+        }
+        .duplex{
+            grid-row: span 2;
+        }
+        .full-piso{
+            grid-column: span 5;
+        }
+        .col1{
+            grid-column: 1/2
+        }
+        .col2{
+            grid-column: 2/3
+        }
+        .col3{
+            grid-column: 3/4
+        }
+        .col4{
+            grid-column: 4/5
+        }
+        .col5{
+            grid-column: 5/6
+        }
+    }
+}
+
+/* =================== Seccion Mapa =====================*/
+
+.section-ubicacion{
+    padding-bottom: 50px;
+    background: $verde-agua;
+    padding-top: 30px;
+    @include from(480px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @include from(m){
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @include from(l){
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+    @include from(xl){
+        padding-top: 180px;
+        padding-bottom: 180px;
+    } 
+    .heading-light, .heading{
+        color: #fff;
+        display: block;
+        font-size: 1.375em; 
+        @include from(l){             
+            font-size: 40px;
+        }
+        @include from(xl){             
+            font-size: 40px;
+        }
+
+    }
+    .desc, h2{
+        width: 100%;
+    }
+    .desc{        
+        @include to(m){             
+            padding: 25px 0;
+        }
+    }
+    .ubicacion-desc{
+        display: flex;
+        flex-wrap: wrap;
+        @include fromTo(640px, 960px){             
+            padding-bottom: 20px;
+        }
+        @include from(l){             
+            padding: 0 5%;
+        }
+        @include from(xl){             
+            padding: 0 10%;
+        }
+    }
+    h2{
+        @include fromTo(640px, 960px){             
+            padding-bottom: 30px;
+        }
+    }
+    p{
+        color: #fff;
+        font-family: 'gravity-light'
+    }
+}
+.container-googlemaps{
+    .mymap{
+        width: 100%;
+        height: 400px;
+        @include from(m){
+            height: 300px;
+        }
+        @include from(l){
+            height: 355px; 
+        }
+        @include from(xl){
+            height: 475px; 
+        }
+    }
+    > span{
+        color: $gris;
+        font-family: 'gravity-book';
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        display: none;
+        @include from(m){
+            display: block; 
+            font-size: 1.0625;          
+        }
+    }
+}
+
+/* =================== Seccion image banners =====================*/
+.section-img{
+    margin-bottom: 20px;    
+    @include from(m){
+        margin-bottom: 0;
+    }
+    .full-image-section{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        > div{
+            width: 100%;
+            height: 100%;
+        }
+        .container-icon-360{
+            @include from(m){
+                left: 0;
+            }
+        }
+    }
+    &.section-img-1{
+        
+        @include from(960px){
+            margin-bottom: 0;
+            transform: translate(0, -6.5%);  
+        }
+        > div {
+            &:last-child{
+                @include to(960px){
+                    justify-content: flex-start;
+                    padding-left: 0.9375em;
+                    padding-right: 0.9375em;
+                } 
+            }
+        }
+        .desc{
+            @include fromTo(640px, 960px){
+                width: 100%;
+                display:    grid;
+                grid-template-columns: 6fr 6fr;
+                padding-top: 25px;
+            }
+            h2{
+                @include fromTo(640px, 960px){
+                    line-height: 1;
+                    padding: 0;
+                    margin: 0;
+                }
+
+            }
+        }
+        .container-fotos{ 
+            position: relative;            
+            margin-bottom: 100px; 
+            @include from(m){
+                margin-bottom: 70px; 
+            }
+        }
+    }
+    &.section-img-2{         
+        @include to(960px){
+            flex-direction: column-reverse;
+        }
+        @include from(m){
+            margin-bottom: 30px
+        }
+        @include from(l){
+            margin-bottom: 50px
+        }
+        @include from(xl){
+            margin-bottom: 70px
+        }
+        
+        .desc{ 
+            padding: 20px 10% 0 5%;
+            @include from(m){
+                padding: 0 10% 0 5%;
+            }
+            @include fromTo(640px, 960px){
+                width: 100%;
+                padding-top: 25px;
+            }
+        }
+        .container-fotos{  
+            margin-bottom: 85px;
+            @include from(m){
+                margin-bottom: 70px; 
+            }
+        }
+    }
+    &.section-img-3{
+        height: 300px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 110px; 
+        margin-top: 170px;
+        .img-responsive{
+            visibility: hidden;
+            @include fromTo(640px, 960px){
+                max-height: 420px;
+            }
+            @include from(960px){
+                visibility: visible;
+            }
+        }
+        .caption{
+            padding: 20px 45px; 
+            left: auto;
+            right: 8%;
+        }  
+        @include from(960px){
+            height: auto;
+            margin-top: 0;
+        }
+        .widget-marron{
+            position: absolute;
+            width: 100%; 
+            top: -150px;
+            left: 0;
+            padding: 0 30px;
+            height: 150px;
+            @include from(m){
+                width: auto;
+                top: -135px;
+            }
+            @include from(960px){ 
+                top: auto;
+                bottom: -170px;
+                left: 0;
+                padding: 0 50px;
+                height: 200px;
+            } 
+            @include from(l){ 
+                height: 240px;
+            }
+        }
+        .full-image-section{
+            .relative{                
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &.section-img-4{      
+        @include fromTo(960px, l){
+            margin-top: 220px;
+        }   
+        .widget{
+            transform: translate(0,-120px); 
+            @include to(m){
+                display:    none;
+            }
+        }
+        .desc{
+            @include to(960px){
+                padding-left: 0.9375em;
+                padding-right: 0.9375em;
+            }                        
+        }
+        ul{
+            li{
+                margin-bottom: 10px;
+                @include to(340px){
+                    font-size: 12px;                  
+                }
+                @include fromTo(340px, 400px){
+                    font-size: 13px;
+                }
+                br{
+                    @include fromTo(640px, 960px){
+                       display: none;    
+                    }
+                }
+            }
+        }
+        .caption{ 
+            left: auto;
+            right: 8%;
+            background-size: 70% auto;
+        } 
+        .container-fotos{  
+            margin-top: 30px;            
+            margin-bottom: 110px;
+            @include from(m){
+                margin-top: 40px; 
+            }
+            @include from(l){
+                margin-top: 50px; 
+                margin-bottom: 130px; 
+            }
+            @include from(l){
+            }
+        }
+        > div:first-child{
+            @include from(960px){
+                @include crossCenter();
+            }
+        }
+    }
+    .container-icon-360{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        @include from(m){
+            left: auto;
+            top: 40px;
+            left: 70px;
+        }
+        @include from(l){
+            top: 50px;
+            left: 90px;
+        }
+    }
+    ul{
+        padding-left: 18px;
+        li{
+
+        }
+    }
+}
+
+.container-icon-360{
+    // width: 79px;
+    // height: 79px;
+    // cursor: pointer;
+    // background: url('../img/icono-360.svg') 0 0 no-repeat;    
+    // &:hover{
+    //     background-position: 0 -79px;
+    // }
+}
+.logo-360-svg{
+    width: 79px;
+    height: 79px;
+    cursor:pointer;
+    .st0{fill:#657C28;}
+    .st1{fill:#FFFFFF;}
+    &:hover{
+        .st0{fill:#FFFFFF;}
+        .st1{fill:#657C28;}
+    }
+}  
+
+/********************************************/
+
+ 
+.mapster_tooltip{     
+    background-color: $verde-agua !important;
+    font-family: "gravity-book" !important; 
+    padding: 7px 12px !important;
+    border-radius: 15px !important;
+    color: $gris !important;
+    border: 1px solid $gris !important; 
+    width: auto !important; 
+} 
+ 
+.title-container{  
+    text-align: right;
+    text-transform: uppercase;
+    span{
+        display: none !important;
+        color: $gris;;
+        font-family: 'gravity-light';
+        font-weight: 300;
+        font-size: 1.81em;    
+        line-height: 0.75em;    
+        display: inline-block;      
+        padding-right: 0.6em;
+        letter-spacing: 0.39em;
+        margin-right: -0.45em;
+        @include from(l){
+            font-size: 2em;
+        }
+        @include from(xl){
+            font-size: 2.8181em;
+        }
+    }
+    h1{
+        color: #ababab;
+        font-family: 'gravity-light';
+        font-weight: 300;
+        padding-right: 0.07em;
+        font-size: 2.6em;
+        line-height: 0.8em;
+        margin: 0;
+        @include from(m){
+            font-size: 3.6em;
+        }
+        @include from(l){
+            letter-spacing: 0.25em;
+            margin: 0 -0.2em 0 0;
+            letter-spacing: 0.4em;
+            font-size: 4.6em;
+        }
+        @include from(xl){
+            font-size: 5.6em;
+        }
+    }
+}
+.section-unidades{
+    position: relative;
+    z-index: 1;
+    background-color: $verde-agua;
+    position: relative;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;     
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 14.1%,  $verde-agua 14.1%, $verde-agua 96%, #ffffff 96%,  #ffffff 97.4%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 14.1%, $verde-agua 14.1%, $verde-agua 96%,#ffffff 96%,  #ffffff 97.4%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 14.1%, $verde-agua 14.1%, $verde-agua 96%,#ffffff 96%,  #ffffff 97.4%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    &:after, &:before{ 
+        content: '';
+        background-color: $verde-agua;
+        height: 2.78%;
+        width: 100%;
+        position: absolute;
+        top: 13.69%;
+        z-index: 10;
+    }
+    &:after{  
+        top: 94.4%;
+        margin-top: -0.757px;
+    }
+    .section-unidades-left{
+        @include edItem(100,35,35);
+        @include edContainer;
+        @include mainCenter;
+        @include crossCenter;
+        @include fromTo(m, 768px){
+            width: 100%;
+        }
+    }
+    .section-unidades-right{
+        @include edItem(100,65,65); 
+        @include mainEnd; 
+        @include fromTo(m, 768px){
+            width: 100%;
+            padding: 0;
+        }
+        @include from(768px){ 
+            padding:0;
+        }
+        z-index: 11;
+    } 
+}
+.ver-descripcion{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color:$verde; 
+    display: grid;
+    grid-template-columns: 18.2% auto;    
+    z-index: 5;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+     
+    @include fromTo(640px, 800px){   
+        position: relative;
+        margin-top: -140px;
+    }
+    @include fromTo(800px, 900px){ 
+        margin-top: -150px;
+    }
+    @include fromTo(600px, 960px){  
+        margin-top: -150px;
+    }
+    @include from(l){
+        padding: 0 0px;
+        margin-right: -292px;
+        margin-top: -147px;
+        width: 500px;
+        height: 200px; 
+    }
+    @include from(xl){ 
+        margin-right: -380.25px;
+        margin-top: -176.4px;
+        width: 650px;
+        height: 240px;
+        padding: 0 40px;
+    } 
+    > div {
+        &:first-child{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-bottom: 30px;
+            @include fromTo(m, 800px){
+                padding-bottom: 10px;
+            }
+        }
+        &:last-child{
+             padding-left: 14%;
+             height: 100%;
+             display: table;
+             div{
+                display: table-cell;
+                vertical-align: middle;
+             }
+        }
+    }
+    h2,p{
+        color: #fff;        
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size:1.3em;
+        line-height: 1.1;
+        margin: 0;
+        @include from(m){
+            font-size: 1.125em;
+        }
+        @include from(800px){
+            font-size: 1.2em;
+        }
+        @include from(l){
+            font-size: 1.375em;
+        }
+        @include from(xl){
+            font-size: 1.625em;
+        }
+    }
+    h2{
+        font-family: 'gravity-bold'; 
+    }
+    p{
+        font-family: 'gravity-light';
+    }
+}
+.map-humboldt{
+    display: none;
+    @include from(m){
+        display: inline;
+    }
+}
+.container-edificio{  
+    //margin-top: -84px;
+    position: relative;
+    z-index: 5;
+     @include from(l){
+        //margin-top: -97px;
+    }
+    @include from(xl){
+        //margin-top: -110px;
+    }
+    .heading{
+        span{
+            display: block;
+            margin-bottom: 15px;
+            @include from(l){
+                margin-bottom: 20px;
+            }
+            @include from(xl){
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .container-edificio-detail{
+        padding-top: 20px;
+    }
+}
+
+.social{ 
+    .social-icon{
+        fill: #727272 !important;  
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        li{
+            @include from(800px){
+                display: inline-block;
+                margin-right: 10px ;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            a{
+                display: block;
+                svg{
+                    width: 18px;
+                    height: 18px;
+                    @include from(m){
+                        width: 25px;
+                        height: 25px;
+                    }
+                    
+                }
+                &:hover{
+                    .social-icon{
+                        fill: $gris !important;  
+                    }
+                }
+            }
+        }
+    }
+}
+.description-unidades{
+    //display: flex; 
+    //align-items: center; 
+    height: 100%;
+    padding: 40% 10% 0 10%;
+    display: none;
+    @include from(l){
+        display: block;
+    }
+}
+
+// Modal view
+#modal-view, .modal-360, #modal-360{ 
+    background-color: rgba(58, 106, 93, 0.8);          
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;          
+    z-index: 9999999; 
+    display: none; 
+    > div{
+        width: 100%;
+        height: 100%;         
+        overflow: hidden;
+        position: relative;
+        padding: 20px 0;
+        @include from(l){
+            padding: 2% 0 1% 0;
+        }
+    }
+    .close-view{
+        color: $marron;
+        cursor: pointer;
+        font-size: 100px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 5;
+        @include from(m){
+            right: 15px;
+            top: 15px; 
+        }
+        @include from(l){
+            right: 25px;
+            top: 25px;
+            width: 30px;
+            height: 30px;
+        }
+        img{
+            display: block;
+        }
+    }
+    .edificio-small{
+        position: absolute;
+        bottom: 40px;
+        left: 120px;
+    }
+    .content-modal{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        @include from(m){
+            width: 90%;
+        }
+        @include fromTo(m, 768px){
+            @include crossEnd;
+        }
+        @include from(768px){
+            width: 70%;
+        }
+    }
+    .planos{
+        width: 100%; 
+        height: 100%;
+        @include fromTo(m, 768px){
+            width: 60%;
+            float: right;
+            height: auto;
+        }
+        li{
+            text-align: center; 
+        }
+
+    } 
+    .header-modal{
+        h2{
+            margin: 70px auto 150px auto;
+            color: $marron;
+            font-family: 'gravity-bold';
+            font-size: 70px;
+            text-align: center; 
+        }
+    }
+
+    .description-info-mobile{         
+        @include fromTo(m, 768px){
+            width: 40%;
+            height:  85%;
+            float: left;
+        }
+        .ed-item{
+            @include fromTo(m, 768px){
+                width: 100%; 
+            }
+        }
+        .floor-info, .unit-info{
+            color: #fff;
+            font-family: 'gravity-bold';
+            font-size: 1em;
+            margin: 0; 
+            @include fromTo(m, 768px){
+                display: inline-block;
+                font-size: 1.5em;       
+            }
+        }
+        .unit-info{ 
+            font-family: 'gravity-light';
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-family: 'gravity-light';
+            font-weight: 300;
+            font-size: 0.6875em;
+            text-transform: uppercase;
+            color: #fff;
+            @include from(480px){
+                font-size: 0.6875em;
+            }
+            @include fromTo(m, 768px){ 
+                font-size: 0.875em;       
+            }
+            span{
+                font-family: 'gravity-bold';
+            }   
+            
+        }
+        .description-info{
+            padding-bottom: 10px;
+            p{
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.lSGallery{
+    margin: 1% auto 0px auto !important;
+    text-align:center;
+}
+.lSSlideOuter {
+    //height: 100%;
+    // .lSPager.lSGallery{
+    //     width: 100% !important;
+    //     text-align: center;
+    //     li{
+    //         display: inline-block;
+    //         float: none;
+    //         img{
+    //             width: 80%;
+    //         }
+    //     }
+    // } 
+}
+.lSSlideWrapper{
+    ul li{
+        img{
+            display: inline-block;
+            max-height: 78vh !important;
+            width: auto !important;
+        }
+    }
+}
+.lSAction{
+    .lSPrev, .lSNext{
+        background-image: url('../img/arrow-left.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 1 !important;
+        width: 18px;
+        height: 34px;
+    }
+    .lSNext{         
+        transform: rotate(180deg);
+    }
+}
+
+//informacion del departamento
+.info{ 
+    padding-top: 50px;
+    max-width: 75%;
+    .floor-info, .unit-info{
+        color: $marron;
+        font-family: 'gravity-bold';
+        font-size: 1.68em;
+        margin: 0;
+        line-height: 1;
+        @include from(l){
+            font-size: 2.6875em;
+        }
+    }
+    .unit-info{ 
+        font-family: 'gravity-light';
+        font-weight: 300;
+    }
+    .description-info{
+        p{
+            font-family: 'gravity-light';
+            font-weight: 300;
+            font-size: 0.925em;
+            text-transform: uppercase;
+            color:#4d4d4d;
+            @include from(l){
+                font-size: 1em;
+                margin: 10px 0;
+            }
+            @include from(xl){
+                font-size: 1.0625em;
+                margin: 15px 0;
+            }
+            span{
+                font-family: 'gravity-bold';
+            }   
+            
+        }
+    }
+}
+.hide{
+    display: none;
+}
+.img-wrap{
+    @include to(m){
+        position:   relative;
+    }
+}
+.table-areas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include from(768px){
+        display: none;
+    }
+    @include crossCenter;
+    @include mainCenter;
+    >div{
+        width: 95%;
+        position: relative;   
+        .areas{  
+            width: 100%;
+            @include mainStart;
+        }        
+    }
+    .dpto{         
+        color:  $verde-agua;
+        background-color: rgba(155,195,233, 0.8);  
+        font-family: 'gravity-bold';
+        padding: 3% 0;
+        width:  10%;
+        margin: 1%;
+        cursor: pointer;
+        text-align: center;
+        font-size: 12px;
+        @include from(480px){
+            font-size: 16px;
+        }
+        &:hover{
+            background-color: rgba(155,195,233, 1);  
+        }
+    }
+
+}
+
+.caption{
+    background: transparent url('../img/flechita.png') right bottom no-repeat;
+    display: inline-block;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: -75px;
+    left: 8%;
+    > div{
+        background: #fff;
+        p{
+            padding: 20px 30px 10px 30px;
+            margin: 0;
+            color: $marron;
+        }
+        
+    }
+}

@@ -1,0 +1,40 @@
+//informacion del departamento
+.info{ 
+    padding-top: 50px;
+    max-width: 75%;
+    .floor-info, .unit-info{
+        color: $color-primario;
+        font-family: 'gravity-bold';
+        font-size: 1.68em;
+        margin: 0;
+        line-height: 1;
+        @include from(l){
+            font-size: 2.6875em;
+        }
+    }
+    .unit-info{ 
+        font-family: 'gravity-light';
+        font-weight: 300;
+    }
+    .description-info{
+        p{
+            font-family: 'gravity-light';
+            font-weight: 300;
+            font-size: 0.925em;
+            text-transform: uppercase;
+            color:#fff;
+            @include from(l){
+                font-size: 1em;
+                margin: 10px 0;
+            }
+            @include from(xl){
+                font-size: 1.0625em;
+                margin: 15px 0;
+            }
+            span{
+                font-family: 'gravity-bold';
+            }   
+            
+        }
+    }
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[LIV SOLER]]></data>
+
+
+
+  <data name="en_pano227_title"><![CDATA[LIV SOLER | EXTERIOR GUATEMALA]]></data>
+  <data name="en_spotpoint244_tooltip"><![CDATA[3 AMBIENTES]]></data>
+  <data name="en_spotpoint252_tooltip"><![CDATA[7º]]></data>
+  <data name="en_spotpoint255_tooltip"><![CDATA[8º]]></data>
+  <data name="en_spotpoint1029_tooltip"><![CDATA[HALL]]></data>
+
+
+  <data name="en_pano225_title"><![CDATA[LIV SOLER | EXTERIOR soler]]></data>
+
+  <data name="en_panogroup234_title"><![CDATA[LIV SOLER | AMENITIES]]></data>
+
+  <data name="en_pano233_title"><![CDATA[LIV SOLER | CENTRO]]></data>
+  <data name="en_spotpoint236_tooltip"><![CDATA[HALL GUATEMALA]]></data>
+  <data name="en_spotpoint237_tooltip"><![CDATA[SUBSUELO]]></data>
+  <data name="en_spotpoint248_tooltip"><![CDATA[2 AMBIENTES]]></data>
+  <data name="en_spotpoint1030_tooltip"><![CDATA[HALL SOLER]]></data>
+  <data name="en_spotpoint1230_tooltip"><![CDATA[PISCINA]]></data>
+  <data name="en_pano238_title"><![CDATA[LIV SOLER | SUM]]></data>
+  <data name="en_spotpoint240_tooltip"><![CDATA[PLANTA BAJA]]></data>
+  <data name="en_spotpoint241_tooltip"><![CDATA[EXTERIOR]]></data>
+  <data name="en_pano326_title"><![CDATA[LIV SOLER | LUDICO]]></data>
+  <data name="en_spotpoint331_tooltip"><![CDATA[Hall Guatemala]]></data>
+  <data name="en_pano1228_title"><![CDATA[LIV SOLER | PISCINA]]></data>
+  <data name="en_spotpoint1231_tooltip"><![CDATA[PLANTA BAJA]]></data>
+  <data name="en_spotpoint1232_tooltip"><![CDATA[HALL SOLER]]></data>
+
+
+  <data name="en_pano229_title"><![CDATA[LIV SOLER | HALL GUATEMALA]]></data>
+  <data name="en_spotpoint232_tooltip"><![CDATA[AMENITIES]]></data>
+  <data name="en_spotpoint235_tooltip"><![CDATA[EXTERIOR]]></data>
+
+
+  <data name="en_pano242_title"><![CDATA[LIV SOLER | 3 AMB GUATEMALA]]></data>
+  <data name="en_spotpoint245_tooltip"><![CDATA[EXTERIOR]]></data>
+
+
+  <data name="en_pano246_title"><![CDATA[LIV SOLER | 2 AMB GUATEMALA]]></data>
+  <data name="en_spotpoint249_tooltip"><![CDATA[EXTERIOR]]></data>
+
+  <data name="en_panogroup958_title"><![CDATA[LIV SOLER | 7º GUATEMALA]]></data>
+
+  <data name="en_pano250_title"><![CDATA[LIV SOLER | 7º  PB GUATEMALA ]]></data>
+  <data name="en_spotpoint256_tooltip"><![CDATA[Exterior]]></data>
+  <data name="en_spotpoint257_tooltip"><![CDATA[planta alta]]></data>
+  <data name="en_pano318_title"><![CDATA[LIV SOLER | 7º pa GUATEMALA ]]></data>
+  <data name="en_spotpoint320_tooltip"><![CDATA[PLANTA BAJA]]></data>
+
+  <data name="en_panogroup959_title"><![CDATA[LIV SOLER | 8º GUATEMALA]]></data>
+
+  <data name="en_pano253_title"><![CDATA[LIV SOLER | 8º PB GUATEMALA]]></data>
+  <data name="en_spotpoint258_tooltip"><![CDATA[PLANTA ALTA]]></data>
+  <data name="en_spotpoint259_tooltip"><![CDATA[PLANTA BAJA]]></data>
+  <data name="en_pano263_title"><![CDATA[LIV SOLER | 8º PA GUATEMALA]]></data>
+  <data name="en_spotpoint265_tooltip"><![CDATA[Terraza]]></data>
+  <data name="en_spotpoint266_tooltip"><![CDATA[planta baja]]></data>
+  <data name="en_pano260_title"><![CDATA[LIV SOLER | 8º TERRAZA GUATEMALA]]></data>
+  <data name="en_spotpoint262_tooltip"><![CDATA[PLANTA ALTA]]></data>
+
+
+  <data name="en_pano321_title"><![CDATA[LIV SOLER | HALL SOLER]]></data>
+  <data name="en_spotpoint324_tooltip"><![CDATA[AMENITIES]]></data>
+  <data name="en_spotpoint325_tooltip"><![CDATA[EXTERIOR]]></data>
+
+
+  <data name="en_pano332_title"><![CDATA[LIV SOLER | 3 AMB SOLER]]></data>
+  <data name="en_spotpoint335_tooltip"><![CDATA[EXTERIOR]]></data>
+
+  <data name="en_panogroup964_title"><![CDATA[LIV SOLER | 8º SOLER]]></data>
+
+  <data name="en_pano336_title"><![CDATA[LIV SOLER | 8º PB SOLER]]></data>
+  <data name="en_spotpoint339_tooltip"><![CDATA[EXTERIOR]]></data>
+  <data name="en_spotpoint340_tooltip"><![CDATA[PLANTA ALTA]]></data>
+  <data name="en_pano341_title"><![CDATA[WIP3]]></data>
+  <data name="en_spotpoint343_tooltip"><![CDATA[TERRAZA]]></data>
+  <data name="en_spotpoint344_tooltip"><![CDATA[PLANTA BAJA]]></data>
+  <data name="en_pano345_title"><![CDATA[LIV SOLER | 8º TERRAZA SOLER]]></data>
+
+
+  <data name="en_pano1031_title"><![CDATA[LIV SOLER | 2 AMB SOLER]]></data>
+  <data name="en_spotpoint1033_tooltip"><![CDATA[EXTERIOR]]></data>
+
+
+
+
+
+
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

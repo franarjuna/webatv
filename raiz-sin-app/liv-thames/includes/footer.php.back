@@ -1,0 +1,59 @@
+<footer class="site-footer">
+    <div class="ed-container footer-top full no-padding" id="contact">  
+        <div class="ed-item row-small ed-container">
+            <div class="ed-item l-40 ed-container footer-logo">
+                <div class="ed-item logo-footer">
+                    <img class="img-responsive" src="assets/img/logo-footer.svg" />
+                </div>
+                <div class="ed-item footer-logos-footer only-desktop">
+                    <img class="img-responsive" src="assets/img/ATV-apellidos-blanco.svg" />
+                    <img class="img-responsive" src="assets/img/logo-four-developers.svg" />
+                </div>
+            </div>
+            <div class="ed-item l-60 footer-desc">
+                <h2 ><span class="heading-light">VIVÍ TODAS LAS <span class="heading">POSIBILIDADES</span></h2><br>
+                <p>Unidades pensadas para que vivas de forma descontracturada, y espacios que se adaptan a los distintos momentos de tu vida. Un lugar para que vivas bien.</p>
+                <p>Contactate con una nueva experiencia.</p>
+                <div class="form-container">
+                    <form action="send.php"  method="post" id="formulario" >
+                        <div class="input input-fifty">
+                            <div>
+                                <input type="text" placeholder="Nombre y apellido" name="name" />	
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Email" name="email" /> 											
+                            </div>
+                        </div>
+                        <div class="input relative"><textarea rows="5" id="message-textarea" placeholder="Mensaje" name="message"></textarea> 										
+                        </div>
+                        <div class="txtright relative">
+                            <img class="loader" src="assets/img/ajax-loader.gif" alt="">
+                            <button type="submit" class="button-submit btn">
+                                Enviar
+                                <img src="assets/img/arrow-left-submit.png" alt=""> 
+                            </button> 								
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="footer-logos mobile-tablet">
+                <img class="img-responsive" src="assets/img/ATV-apellidos-blanco.svg" />
+                <img class="img-responsive" src="assets/img/logo-four-developers.svg" />
+            </div>
+        </div>
+            
+    </div>
+    <div class="footer-bottom ed-container full no-padding" id="contact">
+        <div class="row-small ed-item ed-container">
+            <div class="ed-item s-90 m-70 copyright">
+                <p><span>© 2018 ATV Arquitectos.</span> <span>Todos los derechos reservados.</span> <span class="negrita">Estudio Cornicelli</span></p>							 
+            </div>
+            <div class="ed-item s-10 m-30 social main-end">
+                <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/ATV.arquitectos/" class="social-item"><?php echo file_get_contents("assets/img/facebook.svg"); ?></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/atvarquitectos/" class="social-item"><?php echo file_get_contents("assets/img/instagram.svg"); ?></a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+</footer>

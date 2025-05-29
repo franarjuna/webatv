@@ -1,0 +1,60 @@
+.table-floors{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    td{
+        height: 35px;
+        @include from(m){
+            height: 60px;
+        }
+        width: 14.28%;
+        span{
+            line-height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include from(m){  
+                height: 60px;
+            }
+        }
+        &[rowspan="2"]{
+            span{
+                line-height: 75px;
+                @include from(m){
+                    height: 125px;
+                }
+            }
+        }
+    }
+    table{
+        width: 100%;
+    }
+    .dpto{
+        background-color: rgba(185, 142, 88, 0.8) ;
+        cursor:pointer;
+        &:hover{
+            color: #4d4d4d;
+            background: rgba(249,243,233,0.8);
+        }
+    }
+    .btn-floor{ 
+        background-color: rgba(64, 57 ,49, 0.8);  
+    }    
+    .btn-floor, .dpto{
+        text-align: center;
+        color: #fff;          
+        height: 100%;
+        text-transform: uppercase;        
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-1-5{
+        width: calc(50% - 5px);
+        float: left;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    } 
+}

@@ -1,0 +1,18 @@
+.site-header{
+    > .row{
+    	@include to(960px){
+	        padding-left: 0.9375em !important;
+	        padding-right: 0.9375em !important; 
+	    }
+    }
+}
+.logo{
+	position: relative;
+	z-index: 2;
+	.img-responsive{
+		width: 80%;
+		@include to(m){
+			width: 125px;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+$cssCore: false;
+$cssHelpers: true;
+// $devMode: false;
+// $max-width : 1280px;
+@import 'plugins/edgrid/ed-grid'; 
+@import 'plugins/lightslider';
+@import 'plugins/slick/slick';
+@import 'plugins/slick/slick-theme';
+/* Tools */
+@import "tools/functions";
+@import "tools/mixins";
+@import "tools/site-settings";
+@import "tools/helpers"; 
+
+/* Base */
+@import "base/normalize"; 
+@import "base/base";
+@import "base/form";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+@import "layout/layout";	
+/* Modules */  
+@import "modules/buttons"; 
+@import "modules/menu"; 
+@import "modules/floors";
+//@import "modules/modal";
+@import "modules/slider";
+//@import "modules/widget";
+//@import "modules/gallery";
+@import "modules/renders";
+@import "modules/info"; 
+//@import "state/validation";
+
+/* Theme */ 
+@import "theme/main";

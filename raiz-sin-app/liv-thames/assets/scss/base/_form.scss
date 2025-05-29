@@ -1,0 +1,173 @@
+/* ==|====================
+   Base/Form
+   ======================= */
+form{
+    label.error{
+        color: red;
+        padding: 0;
+        text-align: left;
+    }
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    font-size: 16px;
+    font-family: "gravity-regular";
+    font-weight: 300; 
+    padding: 1.1em 0.7em;
+    // border: none;
+    color: $gris-claro;
+    outline: 0;    
+    box-sizing: border-box;     
+    @include placeholder(lighten( $gris-claro, 10% ));   
+}
+textarea{
+    resize: none; 
+} 
+label{
+    display: block;
+    font-size: 1.125em;
+    color: $gris; 
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    @include from(m){
+        padding: 15px 0;
+    }
+}
+.input{
+    width: 100%;
+    margin-bottom: 20px;
+    display: table;
+    @include from(l){
+        margin-bottom: 0;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    &:nth-child(2){
+        @include from(l){
+            margin-bottom: 3%;
+        }
+    }
+    &.input-fifty{  
+        > div{
+            width: 100% !important;
+            float: left;
+            margin-right: 3%;            
+            width: 100%;            
+            &:first-child{ 
+                margin-bottom: 20px;
+                @include from(m){
+                    margin-bottom: 0;
+                } 
+                @include from(l){
+                    margin-bottom: 3%;
+                } 
+               
+            }
+            &:last-child{
+                margin-right:0;
+            }
+            @include from(m){
+                width: 48.5% !important;                 
+            }   
+        }      
+        input{
+            padding: 0.35em 0.6em;
+            color: $gris;
+        }
+    }
+}
+
+.input-submit{   
+     
+    // &.input-full{
+    //     width:auto;
+    //     a{
+    //         background-color: $gris;
+    //         display: inline-block;      
+    //         color: #fff;
+    //         text-decoration: none;
+    //         &:hover{
+    //             background-color: #fff;
+    //             color: $gris;
+    //         }
+    //     }
+    // }
+    color: #fff;
+    font-family: 'gravity-bold';
+    border-radius: 2em;
+    font-size: 14px;
+    //padding: 0.5em 1em;
+    padding-right: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #95bde2;
+    display: inline-block;      
+    color: #fff;
+    text-decoration: none;
+    &:hover{        
+        background-color:#fff;
+        span.arrow-right{ 
+            background-image: url('../img/arrow-left-submit-hover.png');             
+        }
+        input{
+            background-color: #fff;
+            color: $gris;
+        }
+    }
+    a{
+        
+    color: #fff;
+    font-family: 'gravity-bold';
+    border-radius: 1em;
+    font-size: 14px;
+    padding: 0.5em 1em;
+    }
+    input{
+        text-transform: uppercase;         
+        border: none;
+        outline: none;
+        background-color:inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: $gris;
+        padding: 0.7em 1.5em;
+    }
+    i{ 
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 17px;
+        font-weight: bold; 
+    }
+    span.arrow-right{
+        width: 17px;
+        height: 11px; 
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent url('../img/arrow-left-submit.png') center center no-repeat;
+        cursor: pointer;
+        margin-top: -2px;
+    }
+}
+.success{
+    color: #fafafa;
+    position: absolute;
+    left: 0;
+    bottom: -37px;
+    @include from(l){
+        bottom: -48px;
+    }
+}
+.loader{
+    display: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+}

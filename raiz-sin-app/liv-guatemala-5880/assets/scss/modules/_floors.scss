@@ -1,0 +1,77 @@
+.table-floors{     
+    border-collapse: separate;
+    border-spacing: 7px;
+    margin: 0 auto;
+    @include from(m){
+        border-spacing: 8px;
+    }
+    @include from(l){
+        border-spacing: 10px;
+    }
+    td{
+        height: 40px;
+        width: 35px;
+        @include from(360px){
+            width: 50px;
+            height: 40px;
+        }
+        @include from(m){
+            width: 50px;
+            height: 40px;
+        }
+        @include from(1280px){
+            width: 70px;
+            height: 60px;
+        }
+        span{
+            line-height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;             
+        }
+        &[rowspan="2"]{
+            span{
+                //line-height: 75px;
+                @include from(m){
+                   // height: 125px;
+                }
+            }
+        }
+        &.empty-td{
+            width: 25px;
+            @include from(m){
+                width: 30px;
+            }
+            @include from(1280px){
+                width: 50px; 
+            }
+        }
+    } 
+    .dpto{
+        background-color: rgba($color-primario, 0.8) ;
+        cursor:pointer;
+        &:hover{
+            color: #4d4d4d;
+            background: #c0e34c;
+        }
+    }
+    .btn-floor{ 
+        background-color: rgba(#ebebeb, 0.8);  
+    }    
+    .btn-floor, .dpto{
+        text-align: center;
+        color: #000204;           
+        text-transform: uppercase;        
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-1-5{
+        width: calc(50% - 5px);
+        float: left;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    } 
+}

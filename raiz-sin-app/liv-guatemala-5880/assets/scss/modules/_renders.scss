@@ -1,0 +1,467 @@
+/* =================== Seccion image banners =====================*/
+.section-img{ 
+    background-color: $color-secundario; 
+    &:last-child{
+        
+    }
+    &.section-img-1{
+        position: relative;
+        z-index: 1;        
+        padding-top: 50px;    
+        @include from(m){ 
+            padding-top: 0px;
+        }
+        .img-1-description{ 
+            @include from(m){
+                padding-left: 6.7%;
+            }
+            @include from(l){
+                 padding-left: 12.5%; 
+            }
+            @include from(1280px){ 
+                 
+            }
+        }      
+        .desc{ 
+            @include from(m){
+                border-radius: 0 0 25px 0 !important;
+                background: $color-secundario;
+                position: relative;
+                bottom: -60px;
+                left: 0;
+                z-index: 2;
+                padding-bottom: 40px;
+            }
+            @include from(l){
+                max-width: 40%;
+                bottom: -150px;
+            }
+            @include from(xl){  
+            }
+            h2{
+                margin-bottom: 30px;
+                @include from(m){
+                    font-size: 30px;
+                }
+                @include from(720px){
+                    font-size: 36px;
+                }
+                @include from(l){
+                    font-size: 25px;
+                }
+                @include from(1280px){
+                    font-size: 30px;
+                }
+            } 
+            p{
+                margin-bottom: 20px;
+                color: $color-gray-light; 
+                @include from(m){
+                    margin-bottom: 0;
+                }
+                @include from(l){
+                    font-size: 13px;
+                }
+                @include from(1280px){
+                    font-size: 14px;
+                }
+            }
+        } 
+        .container-fotos{
+            position: relative;
+            margin-top: 30px;
+            @include from(m){
+                text-align: right;
+                margin-top: 0;
+            } 
+            .img-responsive{ 
+                width: 100%;             
+                @include from(m){
+                    max-width: 93.3%; 
+                    float: right;
+                }
+                @include from(l){
+                    max-width: 87.5%;
+                }
+            }
+        }        
+        .container-icon-360{
+            top: 7px;
+            left: 7px;
+            @include from(m){
+                top: 75px;
+                left: 30px;
+            }
+            @include from(l){ 
+                left: auto;
+                right: 150px;
+            }
+            @include from(xl){ 
+                left: auto;
+                right: 240px;
+            }
+        }
+    }
+
+    &.section-img-2{         
+        > div{
+            background-color: #fff;
+            width: 92.8%;   
+            @include from(m){
+                width: 81.5%;
+            }      
+            @include from(l){
+                -webkit-flex-direction: row-reverse;
+                -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+                padding-bottom: 4%;
+            }      
+        }
+        .container-fotos{ 
+            position: relative;    
+            @include from(m){
+                margin-bottom: -50px;  
+            }            
+            > div{
+                width: 86.55%; 
+                position: absolute;
+                top: -15px;
+                right: 10px; 
+                z-index: 5;
+                @include from(m){
+                    width: 67.89%;
+                    top: -60px;
+                    right: 0px; 
+                }
+                @include from(l){                     
+                    right: 14%; 
+                }
+            }   
+            .invisible{
+                width: 86.55%; 
+                @include from(m){
+                    width: 67.89%; 
+                }
+            }
+            @include from(l){
+                margin-top: 0;
+            }  
+        }
+        .small-line{            
+            margin: 20px 0;
+        }   
+        p{
+            color: $color-text;
+        }
+        .container-icon-360{
+            top: 7px;
+            left: 7px;
+            @include from(m){
+                top: 70px;
+                left: 30px;
+            }
+        }
+        .img-1-description{
+            @include from(m){
+                @include mainStart;
+            }  
+        }      
+    }
+    
+    &.section-img-3{  
+        > div{
+            &:first-child{
+                @include from(l){
+                    width: 65.2%;
+                }
+            }
+            &:last-child{
+                background-color: #fff;
+                width: 92.8%; 
+                @include from(m){
+                    padding-left: 115px;
+                }
+                @include from(l){
+                    width: 34.8%;
+                    @include crossCenter;
+                }
+                
+            }
+        }
+        .desc{ 
+            .heading{ 
+                color: $color-text;
+                margin-top: 45px;
+                margin-bottom: 30px;
+                font-size: 25px;
+            } 
+            p{
+                margin-bottom: 20px;
+                color: $color-text; 
+                @include from(m){
+                    font-size: 13px;
+                }
+                @include from(720px){
+                    font-size: 14px;
+                }
+            }
+        }
+        .container-fotos{ 
+            background-color: #fff;
+            > .img-responsive{
+                @include from(m){
+                    width: 84.63%;
+                }                
+                @include from(l){
+                    width: 100%;
+                }
+            }
+        }
+        .container-icon-360{
+            top: 15px;
+            right: 60px;
+            @include from(m){
+                top: 70px;
+                right: 30px;
+            }
+        }
+    }     
+
+    &.section-img-4{  
+        padding-top: 55px; 
+        padding-left: 7.2%;         
+        @include from(m){
+            @include crossEnd; 
+        }
+        @include from(l){
+            padding-top: 0; 
+            max-width: 91%;
+            border-radius: 0 70px 0 0;
+            margin: 0;
+            @include crossStart;
+        } 
+        > div{
+            &:first-child{
+                @include from(l){
+                    @include crossCenter; 
+                    padding-top: 50px;
+                    @include mainCenter; 
+                } 
+            }
+        }
+        .container-fotos{
+            position: relative;            
+            bottom: -50px;
+            z-index: 4;
+        }
+        .heading{
+            font-size: 28px;
+            color: $color-gray-light;
+            @include from(l){
+                margin-bottom: 30px
+            } 
+            @include from(1280px){
+                margin-bottom: 40px
+            } 
+            @include from(xl){
+                margin-bottom: 50px
+            } 
+        }
+        .features{ 
+            color: $color-text;
+            margin-top: 35px;
+            padding-bottom: 40px;
+            @include from(m){
+                margin-top: 0px;
+                padding-bottom: 45px;
+            }
+            @include from(l){
+                margin-top: 0;
+            }
+        } 
+        ul{
+            padding-left: 18px; 
+            li{
+                margin-bottom: 10px; 
+                color: $color-gray-light;                
+                @include to(340px){
+                    font-size: 12px;                  
+                }
+                @include fromTo(340px, 400px){
+                    font-size: 13px;
+                }
+                br{
+                    @include fromTo(640px, 960px){
+                       display: none;    
+                    }
+                }
+            }
+        }  
+        .container-icon-360{
+            top: 25px;
+            right: 60px;
+            @include from(m){
+                top: 25px;
+                right: 60px;
+            }
+        }
+    } 
+
+    &.section-img-5{    
+        position: relative; 
+        @include from(l){
+            flex-direction: row-reverse;
+        }
+        @include from(l){ 
+            max-width: 91%; 
+            margin: 0; 
+            padding-bottom: 70px;
+        } 
+        > div{
+            &:first-child{
+                position: relative;
+                .img-responsive{
+                    @include from(m){
+                        width: 87.24%;
+                    }
+                    @include from(l){ 
+                        margin-top: -70px;
+                    }
+                    @include from(xl){
+                         margin-top: -10%;
+                    }
+                }    
+            }
+            &:last-child{
+                width: 88%;
+                padding-top: 30px; 
+                padding-bottom: 60px; 
+                @include from(m){
+                    padding-bottom: 90px;
+                    width: 67.05%;
+                    margin-bottom: -50px;
+                }
+                @include from(l){  
+                }
+            }
+        }
+             
+        .desc{
+            background-color: $color-gray-light;            
+            border-radius: 0 0 0 40px;
+            padding: 20px 30px; 
+            @include from(m){
+                position: relative;
+                top: -130px;
+           }
+           @include from(l){
+               position: absolute;               
+               top: auto;
+               bottom: 200px;
+               right: 0;
+               margin-right: -10%;
+               width: 37.5%;
+           }
+            @include from(xl){ 
+                bottom: 230px; 
+            }
+        }
+        .heading{
+            margin-bottom: 15px;
+        }
+        .heading, p{
+            color: $color-text;
+        }
+        
+    }
+
+    &.section-img-6{     
+        @include from(l){
+          position: relative;
+        }
+        > div{ 
+            &:last-child{  
+                @include from(m){
+                    @include mainEnd;
+                }
+                @include from(l){
+                    position: initial !important;
+                }
+            }
+        }
+            
+        .container-fotos{ 
+            position: relative;
+            padding-left: 16px;
+            background-color: #fff;
+            @include from(m){
+                padding-left: 65px;
+                width: 92%;
+            }
+            @include from(l){
+                padding-left: 0;
+                width: 86.98%;
+                padding-bottom: 100px;
+                border-radius: 0 0 0 70px;
+                @include mainEnd;
+            }
+            .img-responsive{
+                margin-top: -30px;
+                @include from(m){
+                    margin-top: -60px;
+                }
+            }
+        } 
+        .container-icon-360{
+            right: auto;
+            left: 15px;
+        }
+        .desc{
+            background-color: #fff;
+            border-radius: 0 0 0 40px;
+            padding-bottom: 30px; 
+            @include from(m){
+                width: 92%;
+            }
+            @include from(l){
+                height: 1px;
+                background-color: transparent;
+            }
+            > div{
+                background-color: $color-gray-light;             
+                padding: 20px 30px;  
+                @include from(m){
+                    border-radius: 0 0 30px 0;
+                }
+                &:first-child{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    @include from(m){
+                        right: auto;
+                        top: -45px;
+                    }
+                    @include from(l){
+                        top: 45%;
+                        width: 38%; 
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        .heading{
+            margin-bottom: 15px;
+        }
+        .heading, p{
+            color: $color-text;
+            @include from(l){ 
+                text-align: left;
+                width: 55%; 
+                display: inline-block;
+            }
+        }
+        
+    }
+}
+ 

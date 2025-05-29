@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+RewriteEngine on
+#Rewrite  
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /sens-costa-rica/index.php?path=$1 [NC,L,QSA]

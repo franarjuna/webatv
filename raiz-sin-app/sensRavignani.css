@@ -1,0 +1,1195 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, input, textarea, b {
+    font-family: 'Lato', sans-serif !important;
+}
+
+#bodySensRavignani h2 {
+    color: #126780;
+    font-size: 3.3em;
+    line-height: 1em;
+    font-weight: 300;
+    text-align: center;
+}
+#bodySensRavignani h2 .big {
+    color: #126780;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    display: block;
+    margin-bottom: -10px;
+}
+#bodySensRavignani p {
+    color: #231f20;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin: 40px auto;
+}
+
+::-webkit-input-placeholder {
+   color: #828487;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #828487;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #828487;
+}
+:-ms-input-placeholder {  
+   color: #828487;
+}
+
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+.loader {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.fullscreen {
+	width: 100%;
+	overflow: hidden;
+}
+
+.seccion {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+#bodySensRavignani .wrapper {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+#bodySensRavignani .wrapper-full {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#bodySensRavignani .row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+#bodySensRavignani .row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#bodySensRavignani .col {
+    float: left;
+    padding: 15px;
+}
+#bodySensRavignani .col-20 {   width: 20%;     }
+#bodySensRavignani .col-25 {   width: 25%;     }
+#bodySensRavignani .col-33 {   width: 33.3333333%;     }
+#bodySensRavignani .col-40 {   width: 40%;     }
+#bodySensRavignani .col-50 {   width: 50%;     }
+#bodySensRavignani .col-60 {   width: 60%;     }
+#bodySensRavignani .col-66 {   width: 66.6666666%;     }
+#bodySensRavignani .col-75 {   width: 75%;     }
+#bodySensRavignani .col-80 {   width: 80%;     }
+#bodySensRavignani .col-100 {  width: 100%;        }
+
+
+#home {
+	position: relative;
+}
+#home .cont {
+	position: relative;
+	z-index: 99;
+    height: inherit;
+    min-height: inherit;
+}
+#home .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    min-height: inherit;
+}
+#home .slider * {
+    min-height: inherit;
+
+}
+
+
+
+#home .slider ul {
+	margin: 0;
+    padding: 0;
+}
+#home .slider li {
+	position: relative;
+}
+#home .slider .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	-webkit-transform: translate(0px);
+	transform: translate(0px);
+
+	-webkit-transition: -webkit-transform 7500ms linear;
+	transition:         transform 7500ms linear;
+}
+#img-0 { background-image: url('images/sens-ravignani/fondo-00.jpg');	}
+#img-1 { background-image: url('images/sens-ravignani/fondo-01.jpg');	}
+#img-2 { background-image: url('images/sens-ravignani/fondo-02.jpg');	}
+#img-3 { background-image: url('images/sens-ravignani/fondo-03.jpg');	}
+
+
+.wrapper-cont-centrado-vert {
+    display: table;
+    height: inherit;
+    min-height: inherit;
+    width: 100%;
+}
+.cont-centrado-vert {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    float: none;
+}
+
+
+#home .tel_cont {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	text-align: right;
+	overflow: hidden;
+}
+#home .bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 121%;
+    height: 100%;
+    overflow: hidden;
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transform: rotate(2.2deg);
+    -moz-transform: rotate(2.2deg);
+    -ms-transform: rotate(2.2deg);
+    -o-transform: rotate(2.2deg);
+    transform: rotate(2.2deg);
+
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+	
+}
+#home .bg:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#123f56+0,000000+100&0.83+1,0.83+100 */
+	background: -moz-linear-gradient(left,  rgba(18,63,86,0.83) 0%, rgba(18,62,85,0.83) 1%, rgba(0,0,0,0.83) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(18,63,86,0.83) 0%,rgba(18,62,85,0.83) 1%,rgba(0,0,0,0.83) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(18,63,86,0.83) 0%,rgba(18,62,85,0.83) 1%,rgba(0,0,0,0.83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4123f56', endColorstr='#d4000000',GradientType=1 ); /* IE6-9 */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transform: rotate(-2.2deg);
+    -moz-transform: rotate(-2.2deg);
+    -ms-transform: rotate(-2.2deg);
+    -o-transform: rotate(-2.2deg);
+    transform: rotate(-2.2deg);
+
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+#home .tel_cont p {
+    color: #fff;
+    position: relative;
+    z-index: 99;
+    font-size: 22px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-right: 40px;
+    margin: 0;
+}
+
+
+#formulario_home {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+    height: 110px;
+}
+#formulario_home .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 121%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transform: rotate(2.2deg);
+    -moz-transform: rotate(2.2deg);
+    -ms-transform: rotate(2.2deg);
+    -o-transform: rotate(2.2deg);
+    transform: rotate(2.2deg);
+
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+#formulario_home .bg:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#123f56+0,000000+100&0.83+1,0.83+100 */
+	background: -moz-linear-gradient(left,  rgba(18,63,86,0.83) 0%, rgba(18,62,85,0.83) 1%, rgba(0,0,0,0.83) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(18,63,86,0.83) 0%,rgba(18,62,85,0.83) 1%,rgba(0,0,0,0.83) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(18,63,86,0.83) 0%,rgba(18,62,85,0.83) 1%,rgba(0,0,0,0.83) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4123f56', endColorstr='#d4000000',GradientType=1 ); /* IE6-9 */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transform: rotate(-2.2deg);
+    -moz-transform: rotate(-2.2deg);
+    -ms-transform: rotate(-2.2deg);
+    -o-transform: rotate(-2.2deg);
+    transform: rotate(-2.2deg);
+
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+}
+#formulario_home .wpcf7 {
+	max-width: 1000px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#formulario_home p {
+    margin: 34px 0px;
+    display: block;
+    width: 25%;
+    float: left;
+    padding: 6px;
+}
+#formulario_home form:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#formulario_home .wpcf7-form {
+    position: relative;
+}
+
+div.wpcf7-response-output {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    line-height: 1.4em;
+    padding: 10px 0px !important;
+}
+span.wpcf7-not-valid-tip {
+    display: none !important;
+}
+
+.wpcf7-form input {
+	background-color: #fff;
+    height: 30px;
+    color: #232323;
+    font-size: 15px;
+    font-weight: 500;
+}
+.wpcf7-form input[type="submit"] {
+    background-color: #f0980e;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    height: 30px;
+    padding: 1px 0px;
+}
+#formulario_home input[type="submit"] {
+    padding: 6px 10px;
+    height: auto;
+    position: relative;
+    top: -3px;
+}
+.wpcf7-form input.wpcf7-not-valid {
+    border: 1px solid red;
+}
+div.wpcf7 img.ajax-loader {
+    display: none !important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #232323;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #232323;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #232323;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #232323;
+}
+
+
+#formulario_home.gracias p {
+    color: #fff;
+    width: 100% !important;
+    position: relative;
+    z-index: 9;
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;
+    margin-top: 55px;
+
+}
+
+#dragBg {
+	position: relative;
+}
+#dragBg p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 99;
+    color: #fff;
+    font-size: 3.5em;
+    width: 560px;
+    line-height: 1.1em;
+    text-align: center;
+    margin-left: -280px;
+    margin-top: -50px;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.6);
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+
+#dragBg .inst {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    width: 550px;
+    margin-left: -275px;
+    height: 130px;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 4px rgba(0,0,0,0.6);
+    z-index: 999;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
+#dragBg .inst i {
+    font-size: 2.2em;
+    margin-bottom: 12px;
+    display: inline-block;
+}
+
+.drag-img-cont {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	cursor:ns-resize;
+}
+.drag-img-cont img {
+	width: 100%;
+	position: absolute;
+	top: -750px;
+	left: 0;
+}
+#dragBg.no-draggable {
+    height: auto !important;
+}
+#dragBg.no-draggable .drag-img-cont {
+    overflow: visible;
+    cursor: initial;
+    height: auto !important;
+}
+#dragBg.no-draggable .drag-img-cont img {
+    position: static;
+}
+#dragBg.no-draggable .inst {
+    display: none;
+}
+
+#text1 {
+    background-color: #fff;
+    background-image: url('images/sens-ravignani/edificio.png');
+    background-position: right;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#text1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-color: #D6D5D5;
+    opacity: 0.4;
+    top: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+
+    -webkit-transform: rotate(2.2deg);
+    -moz-transform: rotate(2.2deg);
+    -ms-transform: rotate(2.2deg);
+    -o-transform: rotate(2.2deg);
+    transform: rotate(2.2deg);
+
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transform-origin: right bottom;
+}
+
+#text1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200%;
+    height: 110px;
+    background-color: #D6D5D5;
+    opacity: 0.2;
+    top: 100%;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    -ms-transform: rotate(-3.5deg);
+    -o-transform: rotate(-3.5deg);
+    transform: rotate(-3.5deg);
+    -webkit-transform-origin: left bottom;
+    -moz-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    -o-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+#text1 > .wrapper {
+    height: inherit;
+    min-height: inherit;
+}
+#text1 p {
+    max-width: 400px;
+}
+#text1 img {
+    display: none;
+}
+
+#text1 .wrapper-cont-centrado-vert {
+    width: 50%;
+}
+
+#detalles {
+    background-color: #fff;
+}
+#detalles > .wrapper {
+    max-width: 1080px;
+}
+#detalles header p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.lista-thumbs {
+    padding: 0px 20px;
+}
+.lista-thumbs .col {
+    padding: 0 !important;
+    padding-top: 33.3333333% !important;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #fff;
+    width: calc(33.33% - 10px) !important;
+    width: -webkit-calc(33.33% - 10px) !important;
+    width: -moz-calc(33.33% - 10px) !important;
+    width: -ms-calc(33.33% - 10px) !important;
+    width: -o-calc(33.33% - 10px) !important;
+}
+.lista-thumbs .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+.lista-thumbs .hover {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 213, 213, 0);
+    z-index: 9;
+    -webkit-transition: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.lista-thumbs p {
+    font-size: 1.3em !important;
+    padding: 0px 30px !important;
+}
+#listaThumbsItem1 .img {
+    background-image: url('images/sens-ravignani/detalles/01.jpg');
+}
+#listaThumbsItem2 .img {
+    background-image: url('images/sens-ravignani/detalles/02.jpg');
+}
+#listaThumbsItem3 .img {
+    background-image: url('images/sens-ravignani/detalles/03.jpg');
+}
+#listaThumbsItem4 .img {
+    background-image: url('images/sens-ravignani/detalles/04.jpg');
+}
+#listaThumbsItem5 .img {
+    background-image: url('images/sens-ravignani/detalles/05.jpg');
+}
+#listaThumbsItem6 .img {
+    background-image: url('images/sens-ravignani/detalles/06.jpg');
+}
+
+
+.lista-thumbs .col:hover .hover {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    background-color: rgba(214, 213, 213, 0.9);
+}
+
+
+
+#zona {
+    padding: 250px 0px;
+    position: relative;
+}
+#zona:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+}
+#zona > .wrapper {
+    position: relative;
+    z-index: 999;
+}
+#zona * {
+    color: #fff !important;
+}
+#zona h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+#zona p {
+    max-width: 460px;
+}
+#zonaBgSlider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#zonaBgSlider div,
+#zonaBgSlider ul,
+#zonaBgSlider li {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+#zonaBgSlider .img {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#imgZonaBgSlider1 {
+    background-image: url('images/sens-ravignani/fondo-zona.jpg');
+}
+#imgZonaBgSlider2 {
+    background-image: url('images/sens-ravignani/fondo-zona2.jpg');
+}
+#imgZonaBgSlider3 {
+    background-image: url('images/sens-ravignani/fondo-zona3.jpg');
+}
+
+
+
+.link-mapa,
+.link-mapa2 {
+    display: inline-block;
+    padding: 0px 120px 11px;
+    font-size: 1.3em;
+    text-decoration: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.8+35,0.8+65,0+100 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 35%, rgba(0,0,0,0.8) 65%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 35%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.8) 35%,rgba(0,0,0,0.8) 65%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+.link-mapa2 {
+    display: none;
+}
+
+.ico-marker {
+    display: inline-block;
+    width: 23px;
+    height: 35px;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('images/sens-ravignani/marker.png');
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+
+
+#form2 {
+    background-color: #000;
+    position: relative;
+}
+#form2 .wrapper {
+    position: relative;
+    z-index: 9;
+}
+.top-strip {
+    position: absolute;
+    top: -140px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    z-index: 9;
+}
+.top-strip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 1000%;
+    background-color: #000;
+    top: 100%;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(2.2deg);
+    -moz-transform: rotate(2.2deg);
+    -ms-transform: rotate(2.2deg);
+    -o-transform: rotate(2.2deg);
+    transform: rotate(2.2deg);
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -o-transform-origin: top right;
+    transform-origin: top right;
+}
+.bottom-strip {
+    position: absolute;
+    bottom: -140px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+}
+.bottom-strip:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 1000%;
+    background-color: #000;
+    bottom: 100%;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: rotate(-2.2deg);
+    -moz-transform: rotate(-2.2deg);
+    -ms-transform: rotate(-2.2deg);
+    -o-transform: rotate(-2.2deg);
+    transform: rotate(-2.2deg);
+    -webkit-transform-origin: bottom right;
+    -moz-transform-origin: bottom right;
+    -ms-transform-origin: bottom right;
+    -o-transform-origin: bottom right;
+    transform-origin: bottom right;
+}
+
+#form2 .wpcf7-form {
+    position: relative;
+}
+#form2 p {
+    float: left;
+    width: 25%;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+}
+#form2 .ajax-loader {
+    position: absolute;
+    top: 5px;
+    right: -10px;
+}
+
+
+
+#masEmprendimientos {
+    background-image: url('images/sens/pattern.jpg');
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+#masEmprendimientos a {
+    text-decoration: none !important;
+}
+
+#masEmprendimientos .col-20 {
+    padding: 5px 0px;
+}
+#masEmprendimientos > .wrapper {
+    max-width: 1190px;
+}
+#masEmprendimientos .row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+#masEmprendimientos h4 {
+    color: #126780;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-style: none !important;
+}
+#masEmprendimientos p {
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px !important;
+    text-transform: uppercase;
+    width: 100%;
+    font-style: none !important;
+}
+
+#masEmprendimientos header p {
+    font-size: 1.4em;
+    margin: 0 auto;
+    line-height: 1.2em;
+    max-width: 560px;
+    margin-bottom: 30px;
+}
+
+#footer {
+    text-align: center;
+    width: 100%;
+    padding: 7px 0px;
+    color: #b8b8b8;
+    background-color: #d4d3d3;
+}
+
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+    opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+    opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out; 
+    -moz-transition: all 0.15s ease-out; 
+    transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+    opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+    opacity: 0;
+}
+
+.form-contact {
+    position: relative;
+    z-index: 2;
+}
+
+.form-contact * {
+    box-sizing: border-box;
+}
+
+.form-contact:before,
+.form-contact:after {
+  display: block;
+  content: "";
+}
+
+.form-contact:after {
+  clear: both;
+}
+
+.form-contact .col {
+  width: 25%;
+  float: left;
+  padding: 0 0 5px;
+}
+
+.form-contact .col + .col {
+  padding-left: 5px;
+}
+
+.form-contact input {
+  border: 1px solid #dddedf;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  color: #757575;
+  outline: none !important;
+  padding: 0 10px;
+}
+
+.form-contact button {
+  width: 100%;
+  height: 40px;
+  background-color: #6dd2e7;
+  color: #fff;
+  text-align: center;
+  border: none;
+  display: block;
+  outline: none !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 1.05em;
+}
+
+.form-contact button:hover {
+  background-color: #58acbd;
+}
+
+.form-contact button:focus {
+  background-color: #58acbd;
+}
+
+.form-contact .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.form-contact .alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.form-contact .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.form-contact label.error {
+  color: red;
+}
+
+@media (max-width: 1100px) {
+    #text1 {
+        max-height: 620px;
+    }
+
+}
+@media (max-width: 1000px) {
+    #bodySensRavignani .col-20 {
+        width: 25%;
+    }
+    #zona {
+        padding: 130px 0px;
+    }
+    .link-mapa {
+        display: none;
+    }
+    .link-mapa2 {
+        display: inline-block;
+    }
+}
+@media (max-width: 950px) {
+    #text1 {
+        background: #fff;
+        background-image: none;
+        padding: 100px 0px 0px;
+        max-height: none;
+        height: auto !important;
+    }
+    #text1 .wrapper-cont-centrado-vert {
+        width: 100%;
+        display: block;
+    }
+    #text1 .cont-centrado-vert {
+        display: block;
+        width: 100%;
+    }
+    #text1 img {
+        display: inline-block;
+    }
+}
+@media (max-width: 800px) {
+    #home  {
+        min-height: 600px;
+    }
+    #home img  {
+        width: 65%;
+        max-width: 360px;
+    }
+    #home .cont-centrado-vert {
+        padding-bottom: 130px;
+    }
+    #formulario_home {
+        bottom: 0px;
+        height: auto;
+    }
+    #formulario_home p {
+        width: 100%;
+        float: none;
+        margin: 0px 0px;
+    }
+    #formulario_home .wpcf7-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #bodySensRavignani .col-20 {
+        width: 33.333333%;
+    }
+    #masEmprendimientos > .wrapper {
+        max-width: 700px;
+    }
+    #formulario_home .bg {
+        bottom: -70px;
+    }
+    #formulario_home .bg:after {
+        top: 0px;
+    }
+    #formulario_home .wpcf7 {
+        margin-bottom: 20px;
+    }
+
+    #form2 p {
+        float: none;
+        width: 100%;
+        padding: 4px 0px;   
+    }
+    #form2 .wpcf7-form {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .wpcf7-form input {
+        text-align: center;
+    }
+
+    div.wpcf7-response-output {
+        top: -80px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .lista-thumbs .col {
+        width: 50% !important;
+        padding-top: 50% !important;
+    }
+    #bodySensRavignani h2 {
+        font-size: 2.2em;
+    }
+    #bodySensRavignani h2 .big {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: -4px;
+    }
+    #bodySensRavignani p {
+        font-size: 1.2em;
+    }
+    #text1 p {
+        max-width: 330px;
+    }
+    #detalles header p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    #dragBg p {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        padding-top: 150px;
+        font-size: 2.5em;
+    }
+    #dragBg .inst {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+    .ico-marker {
+        display: none;
+    }
+    .link-mapa2 {
+        padding: 3px 40px 3px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 550px) {
+    #bodySensRavignani .col-20 {
+        width: 50%;
+    }
+    #bodySensRavignani .col-20:nth-child(odd) {
+        clear: both;
+    }
+    #masEmprendimientos > .wrapper {
+        max-width: 460px;
+        padding-right: 22px;
+        padding-left: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+    #home .tel_cont {
+        height: 55px;
+    }
+    #home .tel_cont p {
+        padding-top: 10px;
+        padding-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

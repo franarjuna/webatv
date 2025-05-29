@@ -1,0 +1,90 @@
+body {
+    color: #fff;
+    background-image: url(../img/bg_landing_cr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h2{
+    font-size: 3.1vw;
+}
+#hero {
+    font-family: 'Canela';
+    min-height: 100vh;
+    color: #fff;
+    padding-top: 5vh;
+}
+.logo{
+    margin-bottom: 60px;
+}
+.form  h3{
+    font-family: 'HOKSansProBook';
+    color: #025073;
+    font-size: 1.25vw;
+    line-height: 1.25em;
+    margin-bottom: 38px;
+}
+.form textarea,
+.form input{
+    font-size: 0.89vw!important;
+    padding-bottom: 0.5rem!important;
+}
+.form {
+    font-size: 0.7vw;
+    font-family: 'HOKSansProBook';
+    background-color: rgba(30,202,211,0.8);
+    border-radius: 6px;
+    padding: 30px;
+    color: #025073;
+}
+#enviar{
+    font-size: 0.89vw;
+    line-height: 1em;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #025073;
+    color:#fff;
+    text-align: center;
+    padding: 15px 0 17px 0;
+    border-radius: 20px;
+    border:0;
+}
+
+.whatsappci {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: rgba(30,202,211,1);
+}
+
+.ocampo{
+    margin-left:30px;
+}
+
+@media (max-width: 1000px) {
+    #hero {
+        padding-bottom: 50px;
+    }
+    #enviar{
+        font-size: 21px;
+    }
+    .form  h3{
+        font-size: 24px;
+    }
+    #hero h2{
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+    .form textarea,
+    .form input{
+        font-size: 14px!important;
+    }
+    .footer img{
+        display: block;
+        margin-bottom: 20px;
+        float: none;
+    }
+    .ocampo{
+        float: none;
+    }
+}

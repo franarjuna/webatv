@@ -1,0 +1,848 @@
+/* ==|====================
+   Main Page
+   ======================= 
+*/
+.site{
+    width: 100%; 
+    max-width: 1920px;
+    overflow: hidden;    
+    margin: 0 auto;
+}
+.section-building{           
+    position: relative;
+    z-index: 2; 
+    @include from(360px){         
+    }
+    .custom-heading{
+        margin-bottom: 30px;
+        font-family: "gravity-book";
+    }
+    .btn-unidades{
+        font-size: 11.7px;
+        padding: 6px 22px;
+        margin-top: 10px;
+        @include from(m){
+            margin-top: 15px;
+            font-size: 15px;
+        }
+        .arrow-svg{
+            width: 22px;
+            height: 22px;
+            margin-left: 5px;
+            margin-top: -2px;
+            .arrow-path{
+                transition: all .5s;
+                fill: $color-primario;
+            }
+        }
+        &:hover{
+            .arrow-svg{ 
+                .arrow-path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    .building-container{                  
+        .building{
+            width: 88.8%;
+            display: block; 
+            @include from(m){             
+                width: 100%;
+            }   
+
+        }
+    }
+    .building-text{
+        position: relative;
+        z-index: 2;
+        padding-top: 20px; 
+        > div{
+            @include from(l){
+                padding-left: 9%;
+                padding-top: 70px;
+            }
+            @include from(xl){
+                padding-left: 11.7%;
+                padding-top: 115px;
+            }
+        }
+        p{
+            color: #606060;
+            font-size: 13px;
+            @include from(m){
+                font-size: 0.875em;
+            } 
+            @include from(1200px){
+                font-size: 1em;
+            }   
+        }
+    } 
+}
+ 
+ 
+
+/* =================== Seccion Unidades =====================*/
+.container-unidades{
+    margin-top:10px;
+    position: relative;
+    z-index: 1;    
+    background-color: $color-secundario; 
+    background: transparent url('../img/bg-edificio-360.jpg') 0 0 no-repeat;    
+    background-size: cover; 
+    position: relative;       
+    @include from(380px){ 
+        background-image: url('../img/bg-edificio-768.jpg');
+    }
+    @include from(768px){ 
+        background-image: url('../img/bg-edificio-768.jpg');
+        background-position: 0 0;
+    }
+    @include from(l){ 
+        background-image: url('../img/bg-edificio-1280.jpg'); 
+    } 
+    @include from(xl){  
+        background-image: url('../img/bg-edificio-1920.jpg');
+        margin-top: 40px;
+    }   
+    .edificio-departamentos{
+        position: relative;        
+        >img{
+            visibility:  hidden;
+            display: none;
+            @include from(m){
+                display: initial;
+            }
+        } 
+    }
+    .floor-buttons{ 
+        display: flex;
+        justify-content: center;                
+        
+        > div{
+            width: 95%;
+            padding: 90px 0;
+            @include from(m){
+                width: 80%;  
+                padding: 3.5% 0 90px 0;
+            } 
+             
+            @include from(l){
+                width: 75%;  
+            }
+            @include from(1300px){
+                width: 65%; 
+            }
+            @include from(xl){
+                width: 46.22%; 
+            }
+        }
+        .phs-altura{
+            padding:  0 10%;
+            @include from(m){
+                padding: 0;
+                @include mainEnd;
+            }            
+            @include from(l){
+                display: none;
+            }
+            > div{
+                @include from(m){
+                    max-width: 40.3%;
+                }
+            }
+        }
+        p{
+            color: $color-gray-light;
+        }
+    }
+    
+}
+
+/* =================== Seccion Mapa =====================*/
+
+.section-ubicacion{
+    background-color: $color-secundario;  
+    .container-ubicacion{
+        background-color: #fff;        
+        @include from(l){
+            padding-bottom: 0;
+            max-width: 93%;
+        }
+        @include from(1200px){ 
+        }
+    }     
+    .ubicacion-desc{  
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+         
+        @include from(l){             
+            @include crossCenter;
+            @include mainCenter;
+        }  
+        .desc{
+            display: inline-block;
+            text-align: initial;         
+            @include from(m){             
+                padding: 35px 0;
+            }
+            @include from(l){             
+                padding: 20px 0 0 0;
+            }
+            @include from(1200px){             
+                padding: 25px 0 0;
+            }
+            h2{                
+                line-height: 1.2;
+                margin-bottom: 32px;                 
+                font-size: 30px;                 
+                @include from(1280px){             
+                    font-size: 44px;
+                }
+            } 
+            p{ 
+                color: $color-secundario;
+                font-size: 0.875em;
+                font-family: 'gravity-book';
+                margin-bottom: 20px;
+                display: inline-block;
+                text-align: initial;
+                @include from(360px){
+                    font-size: 0.875em; 
+                }
+                @include from(l){
+                    font-size: 0.9375em; 
+                }
+                @include from(1280px){
+                    font-size: 1.0625em; 
+                }   
+            }
+        }
+    }
+}
+.container-googlemaps{
+    @include from(l){
+        background-color: $color-secundario;
+    }
+    .mymap{
+        width: 100%; 
+        height: 500px;
+        @include from(360px){
+            height: 580px;
+        }
+        @include from(m){
+            height: 535px;
+        }
+        @include from(l){
+            border-radius: 0 0 80px 0;
+        } 
+        @include from(xl){
+            height: 615px;  
+        }
+    } 
+}
+
+/********************************************/
+
+ 
+.mapster_tooltip{     
+    background-color: $color-terciario !important;
+    font-family: "gravity-book" !important; 
+    padding: 7px 12px !important;
+    border-radius: 15px !important;
+    color: $color-primario !important;
+    border: 1px solid $color-primario !important; 
+    width: auto !important; 
+} 
+ 
+.title-container{  
+    text-align: right;
+    text-transform: uppercase;
+    span{
+        display: none !important;
+        color: $color-primario;;
+        font-family: 'gravity-light';
+        font-weight: 300;
+        font-size: 1.81em;    
+        line-height: 0.75em;    
+        display: inline-block;      
+        padding-right: 0.6em;
+        letter-spacing: 0.39em;
+        margin-right: -0.45em;
+        @include from(l){
+            font-size: 2em;
+        }
+        @include from(xl){
+            font-size: 2.8181em;
+        }
+    }
+    h1{
+        color: #ababab;
+        font-family: 'gravity-light';
+        font-weight: 300;
+        padding-right: 0.07em;
+        font-size: 2.6em;
+        line-height: 0.8em;
+        margin: 0;
+        @include from(m){
+            font-size: 3.6em;
+        }
+        @include from(l){
+            letter-spacing: 0.25em;
+            margin: 0 -0.2em 0 0;
+            letter-spacing: 0.4em;
+            font-size: 4.6em;
+        }
+        @include from(xl){
+            font-size: 5.6em;
+        }
+    }
+}
+.section-unidades{
+    position: relative;
+    z-index: 1;
+    background-color: $color-terciario;
+    position: relative;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;     
+    background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 14.1%,  $color-terciario 14.1%, $color-terciario 96%, #ffffff 96%,  #ffffff 97.4%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 14.1%, $color-terciario 14.1%, $color-terciario 96%,#ffffff 96%,  #ffffff 97.4%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 14.1%, $color-terciario 14.1%, $color-terciario 96%,#ffffff 96%,  #ffffff 97.4%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    &:after, &:before{ 
+        content: '';
+        background-color: $color-terciario;
+        height: 2.78%;
+        width: 100%;
+        position: absolute;
+        top: 13.69%;
+        z-index: 10;
+    }
+    &:after{  
+        top: 94.4%;
+        margin-top: -0.757px;
+    }
+    .section-unidades-left{
+        @include edItem(100,35,35);
+        @include edContainer;
+        @include mainCenter;
+        @include crossCenter;
+        @include fromTo(m, 768px){
+            width: 100%;
+        }
+    }
+    .section-unidades-right{
+        @include edItem(100,65,65); 
+        @include mainEnd; 
+        @include fromTo(m, 768px){
+            width: 100%;
+            padding: 0;
+        }
+        @include from(768px){ 
+            padding:0;
+        }
+        z-index: 11;
+    } 
+}
+.ver-descripcion{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    background-color:$color-terciario; 
+    display: grid;
+    grid-template-columns: 18.2% auto;    
+    z-index: 5;
+    width: 100%;
+    height: 150px;
+    margin-top: -150px;
+     
+    @include fromTo(640px, 800px){   
+        position: relative;
+        margin-top: -140px;
+    }
+    @include fromTo(800px, 900px){ 
+        margin-top: -150px;
+    }
+    @include fromTo(600px, 960px){  
+        margin-top: -150px;
+    }
+    @include from(l){
+        right: 0;
+        left: auto;
+        padding: 0 0px;
+        margin-right: -282px;
+        margin-top: -125px;
+        width: 400px;
+        height: 150px; 
+    }
+    @include from(xl){ 
+        margin-right: -380.25px;
+        margin-top: -176.4px;
+        width: 650px;
+        height: 240px;
+        padding: 0 40px;
+    } 
+    > div {
+        &:first-child{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-bottom: 30px;
+            @include fromTo(m, 800px){
+                padding-bottom: 10px;
+            }
+        }
+        &:last-child{
+             padding-left: 14%;
+             height: 100%;
+             display: table;
+             div{
+                display: table-cell;
+                vertical-align: middle;
+             }
+        }
+    }
+    h2,p{
+        color: #fff;        
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size:1.3em;
+        line-height: 1.1;
+        margin: 0;
+        @include from(m){
+            font-size: 1.125em;
+        }
+        @include from(800px){
+            font-size: 1.2em;
+        }
+        @include from(l){
+            font-size: 1.375em;
+        }
+        @include from(xl){
+            font-size: 1.625em;
+        }
+    }
+    h2{
+        font-family: 'gravity-bold'; 
+    }
+    p{
+        font-family: 'gravity-light';
+    }
+}
+.map-humboldt{
+    display: none;
+    @include from(m){
+        display: inline;
+    }
+}
+.container-edificio{  
+    //margin-top: -84px;
+    position: relative;
+    z-index: 5;
+     @include from(l){
+        //margin-top: -97px;
+    }
+    @include from(xl){
+        //margin-top: -110px;
+    }
+    .heading{
+        span{
+            display: block;
+            margin-bottom: 15px;
+            @include from(l){
+                margin-bottom: 20px;
+            }
+            @include from(xl){
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .container-edificio-detail{
+        padding-top: 20px;
+    }
+}
+
+.social{ 
+    .social-icon{
+        fill: $color-gray-light !important;  
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        text-align: right;
+        li{
+            @include from(800px){
+                display: inline-block;
+                margin-right: 10px ;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+            a{
+                display: block;
+                svg{
+                    width: 18px;
+                    height: 18px;
+                    @include from(m){
+                        width: 25px;
+                        height: 25px;
+                    }
+                    
+                }
+                &:hover{
+                    .social-icon{
+                        fill: $color-primario !important;  
+                    }
+                }
+            }
+        }
+    }
+}
+.description-unidades{
+    //display: flex; 
+    //align-items: center; 
+    height: 100%;
+    padding: 40% 10% 0 10%;
+    display: none;
+    @include from(l){
+        display: block;
+        //padding: 60% 0 0 15%;
+    }
+}
+
+// Modal view
+#modal-view, .modal-360, #modal-360{ 
+    background-color: rgba($color-secundario, 0.9);          
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+    top: 0; 
+    left: 0;          
+    z-index: 9999999; 
+    display: none; 
+    > div{
+        width: 100%;
+        height: 100%;         
+        overflow: hidden;
+        position: relative;
+        padding: 20px 0;
+        @include from(l){
+            padding: 2% 0 1% 0;
+        }
+    }
+    .close-view{
+        color: $color-primario;
+        cursor: pointer;
+        font-size: 100px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        z-index: 5;
+        @include from(m){
+            right: 15px;
+            top: 15px; 
+        }
+        @include from(l){
+            right: 25px;
+            top: 25px;
+            width: 30px;
+            height: 30px;
+        }
+        img{
+            display: block;
+        }
+    }
+    .edificio-small{
+        position: absolute;
+        bottom: 40px;
+        left: 120px;
+    }
+    .content-modal{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        @include from(m){
+            width: 90%;
+        }
+        @include fromTo(m, 768px){
+            @include crossEnd;
+        }
+        @include from(768px){
+            width: 70%;
+        }
+    }
+    .planos{
+        width: 100%; 
+        height: 100%;
+        @include to($mobile_slider){ 
+            height: calc(70vh - 20px) ; 
+        }
+        li{
+            text-align: center; 
+        }
+
+    } 
+    .header-modal{
+        h2{
+            margin: 70px auto 150px auto;
+            color: $color-primario;
+            font-family: 'gravity-bold';
+            font-size: 70px;
+            text-align: center; 
+        }
+    }
+
+    .description-info-mobile{         
+         
+        .ed-item{
+            @include fromTo(m, 768px){
+                width: 100%; 
+            }
+        }
+        .floor-info, .unit-info{
+            color: #fff;
+            font-family: 'gravity-bold';
+            font-size: 1em;
+            margin: 0; 
+            @include fromTo(m, 768px){
+                display: inline-block;
+                font-size: 1.5em;       
+            }
+        }
+        .unit-info{ 
+            font-family: 'gravity-light';
+            font-weight: 300;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-family: 'gravity-light';
+            font-weight: 300;
+            font-size: 0.6875em;
+            text-transform: uppercase;
+            color: #fff;
+            @include from(480px){
+                font-size: 0.6875em;
+            }
+            @include fromTo(m, 768px){ 
+                font-size: 0.875em;       
+            }
+            span{
+                font-family: 'gravity-bold';
+            }   
+            
+        }
+        .description-info{
+            padding-bottom: 10px;
+            p{
+                &:first-child{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media all and (min-height: 480px) and (max-height: 1024px) and (max-width: $mobile_slider) {
+    // .lSSlideWrapper{
+    //     height: calc(100% - 50px);  
+    // }
+    // .description-info-mobile{
+    //     height: calc(30vh - 20px) ;             
+    // }
+}
+         
+.lSGallery{
+    margin: 1% auto 0px auto !important;
+    text-align:center;
+}
+.lSSlideOuter {
+    @include to($mobile_slider){
+        height: 100%;
+    }
+    .lSSlideWrapper{ 
+        ul li{
+            img{
+                @include from($mobile_slider){
+                    display: inline-block;
+                    max-height: 78vh !important;
+                    width: auto !important; 
+               }
+            }
+        }
+        
+        .lightSlider.lSSlide{
+           @include to($mobile_slider){
+               height: 100%;
+           }            
+           > li{
+                @include to($mobile_slider){
+                    height: 100%;
+                }
+                iframe{
+                    @include to($mobile_slider){
+                        height: 100%;
+                    }                    
+                }
+                img{
+                    width: auto !important;
+                    @include to($mobile_slider){
+                        height: 100% !important; 
+                    }
+                    @include from($mobile_slider){
+                        display: inline-block;
+                        max-height: 78vh !important; 
+                    }
+                }
+           }
+        }
+
+    }
+    .lSGallery{
+        @include to($mobile_slider){
+            //position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 20px;
+        }
+    } 
+}
+
+.lSAction{
+    .lSPrev, .lSNext{
+        background-image: url('../img/arrow-left.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        opacity: 1 !important;
+        width: 18px;
+        height: 34px;
+    }
+    .lSNext{         
+        transform: rotate(180deg);
+    }
+}
+
+
+.hide{
+    display: none;
+}
+.img-wrap{
+    @include to(m){
+        position:   relative;
+    }
+}
+.table-areas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    @include from(768px){
+        display: none;
+    }
+    @include crossCenter;
+    @include mainCenter;
+    >div{
+        width: 95%;
+        position: relative;   
+        .areas{  
+            width: 100%;
+            @include mainStart;
+        }        
+    }
+    .dpto{         
+        color:  $color-terciario;
+        background-color: rgba(155,195,233, 0.8);  
+        font-family: 'gravity-bold';
+        padding: 3% 0;
+        width:  10%;
+        margin: 1%;
+        cursor: pointer;
+        text-align: center;
+        font-size: 12px;
+        @include from(480px){
+            font-size: 16px;
+        }
+        &:hover{
+            background-color: rgba(155,195,233, 1);  
+        }
+    }
+
+}
+.logo-360-svg{
+    width: 40px;
+    height: 40px;
+    @include from(m){
+        width: 79px;
+        height: 79px;
+    }
+    cursor:pointer;
+    .st0{fill:#FFFFFF;}
+    .st1{fill: $color-secundario;}
+    &:hover{
+        .st0{fill:#FFFFFF;}
+        .st1{fill: $color-secundario;;}
+    }
+} 
+
+.caption{     
+    display: inline-block; 
+    position: absolute;   
+    background: #fff;
+    padding: 2px 0.9375em;
+    left: 0;   
+    @include from(m){ 
+        padding: 10px 0.9375em;
+    }
+    &.bottom-left{
+        left: 0;        
+        border-top-right-radius: 17px; 
+    }
+    &.bottom-right{
+        left: auto;
+        right: 0; 
+        border-top-left-radius: 17px;
+    }
+    &.bottom-left, &.bottom-right{
+        bottom: -33px; 
+        @include from(m){
+            bottom: -25px;
+        }
+        @include from(l){
+            bottom: -6px;
+        }
+    }
+    span{
+        color: #7f6f51; 
+        font-size: 0.8125em;
+        text-transform: uppercase;
+        @include from(480px){
+            font-size: 0.975em;
+        }
+        @include from(m){
+            font-size: 1em;
+        }
+    }
+}
+.container-icon-360{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    @include from(m){
+        left: auto;
+        top: 40px;
+        left: 70px;
+    }
+    @include from(l){
+        top: 50px;
+        left: 90px;
+        width: 80px;
+        height: 80px;
+    }
+}

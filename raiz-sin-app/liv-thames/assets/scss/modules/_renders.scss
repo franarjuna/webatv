@@ -1,0 +1,224 @@
+/* =================== Seccion image banners =====================*/
+.section-img{
+    margin-bottom: 20px;    
+    @include from(m){
+        margin-bottom: 0;
+    }
+    .full-image-section{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        > div{
+            width: 100%;
+            height: 100%;
+        }
+        .container-icon-360{
+            @include from(m){
+                left: 0;
+            }
+        }
+    }
+    &.section-img-1{
+        position: relative;
+        .heading, .heading-light{
+            color: #fff;
+            font-size: 30px;
+            @include from(m){
+                font-size: 36px;
+            }
+            @include from(l){
+                font-size: 40px;
+            }
+            @include from(xl){
+                font-size: 43px;
+            }
+        }
+        > div {
+            &:first-child{
+                background-color: $marron;
+                border-radius: 0 0 0 30px;
+                padding-bottom: 50px;
+                position: relative;
+                z-index: 2;
+                @include from(m){
+                    border-radius: 0 0 0 40px;
+                }
+                @include from(l){
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding-left: 2.5% ;
+                    padding-right: 2.5% ;
+                    padding-bottom: 90px ;
+                }
+                @include from(xl){ 
+                    padding-bottom: 120px ;
+                }
+            } 
+        }
+        .desc{ 
+            h2{
+                margin-top: 10px;
+                @include from(l){
+                    margin-top: 30px;
+                }
+                @include from(xl){
+                    margin-top: 40px;
+                }
+
+            }
+            > div{
+                @include from(l){
+                    margin-top: 5px;
+                }
+            }
+        }
+        p{
+            color: #fff;
+        }
+        .container-fotos{ 
+            position: relative;            
+            margin-bottom: 20px; 
+            transform: translate(0, -30px  );  
+            z-index: 1;
+            @include from(m){
+                margin-bottom: 30px; 
+            }
+            @include from(l){
+                transform: initial; 
+            } 
+        }
+        .container-icon-360{
+            top: 45px;
+            left: 20px;
+            @include from(m){
+                top: 70px;
+                left: 30px;
+            }
+        }
+    }
+    &.section-img-2{    
+        display: block;     
+        padding-top: 10px;  
+        margin-bottom: 40px;
+        @include from(l){
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 40px;
+        }
+        @include from(1200px){ 
+            margin-top: 50px;
+        }
+
+        h2{
+            @include from(l){
+                float: right;
+            }
+        }
+        .heading, .heading-light{
+            font-size: 33px;
+            color: $marron;
+            @include from(l){
+                font-size: 20px;
+            }
+            @include from(1200px){
+                font-size: 25px;
+            }
+            @include from(xl){
+                font-size: 33px;
+            }
+             
+        }
+        .desc{  
+            padding-top: 15px;
+            display: block;
+            padding-bottom: 33px;
+            @include from(m){ 
+                padding-bottom: 80px;
+            } 
+        } 
+        .caption{  
+            @include from(m){
+                left: auto;
+                right: 0;
+                border-top-right-radius: 0;
+                border-top-left-radius: 17px;
+            } 
+        }
+    } 
+
+    &.section-img-3{  
+        padding-top: 60px;
+        padding-bottom: 25px; 
+        @include from(l){
+            padding-top: 80px;
+            padding-bottom: 50px; 
+        }
+        @include from(xl){
+            padding-top: 100px;
+            padding-bottom: 85px; 
+        }
+        h2{
+            margin-bottom: 20px;
+        }   
+        > div{
+            &:first-child{
+                @include from(l){
+                    margin-left: -0.9375em; 
+                }
+            }
+        }
+        .heading, .heading-light{
+            color: #424242;
+            font-size: 30px;
+            @include from(m){
+                font-size: 36px;
+            }
+        }
+        .desc{
+            padding-left: 0.9375em;
+            padding-right: 0.9375em; 
+            @include from(l){
+                padding-left: 0;
+                padding-right: 0; 
+            } 
+        }
+        .features{
+            padding-left: 0.9375em;
+            padding-right: 0.9375em;
+            margin-top: 40px;
+            @include from(m){
+                margin-top: 10px;
+            }
+            @include from(l){
+                margin-top: 0;
+            }
+        } 
+        ul{
+            li{
+                margin-bottom: 10px;                 
+                @include to(340px){
+                    font-size: 12px;                  
+                }
+                @include fromTo(340px, 400px){
+                    font-size: 13px;
+                }
+                br{
+                    @include fromTo(640px, 960px){
+                       display: none;    
+                    }
+                }
+            }
+        }  
+    }
+    
+    ul{
+        padding-left: 18px;
+        li{
+
+        }
+    }
+}
+ 

@@ -1,0 +1,151 @@
+/* ==|====================
+   Module/Slider
+   ======================= */
+.slider-block{
+    background-color: #fff;
+    padding: 10px;
+    > div{
+        background: url("../img/bg_slider.jpg")  no-repeat 0 center; 
+    }
+}
+.lSPager.lSpg{
+    display: none;
+}
+.slider{     
+     
+    .slider-item{
+        max-height: 430px; 
+        width: 100%
+    }
+    .slider-item-content{
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .slider-item--image{
+        width: 100%;
+        text-align: center;
+        @include from(l){
+            width: 48.7%;
+        }
+        img{
+            display: inline-block;
+        }
+    }
+    .slider-item--description{
+        width: 100%;
+        @include from(l){
+            width: 51.3%;
+        }
+    }
+    .slider-title, .slider-text{
+        width: 81%;
+    }
+    .slider-title{
+        h2{
+            font-family: "gotham-book";
+            font-size: 1.25em;
+            line-height: 1em; 
+            margin: 0;
+            text-transform: uppercase;
+            @include from(m){
+                font-size: 1.875em;
+            }
+        }
+        &.title-cica{
+            h2{ 
+                font-size: 2em; 
+                font-family: "gotham-light" ;
+                span{
+                    color: $gris;
+                    font-family: "gotham-black";
+                }
+                @include from(m){
+                    font-size: 3em;
+                }
+            }
+        }
+        img{
+            display: block;
+            &.subtitle-sica-img{
+                margin-left: 141px;
+            }
+        }
+    }
+    .slider-text{
+        font-family: "gotham-medium";
+        p{
+            text-transform: uppercase;
+        }
+        ul{
+                
+            li{
+                font-size: 1.125em;
+                margin-bottom:6%;
+                list-style-type: disc;
+                list-style-position: inside;
+                text-transform: uppercase;
+            }
+            &.ul-without-bullet{
+                li{
+                    font-size: 1.125em;
+                    margin-bottom:0;
+                    list-style:none; 
+                }
+            }
+        }
+    }
+}     
+.slick-dots{
+    li{
+        position: relative;
+        button{         
+            background: transparent none repeat scroll 0 0;
+            border: 0 none;
+            color: transparent;
+            cursor: pointer;
+            display: block;
+            font-size: 0;
+            height: 15px;
+            line-height: 0;
+            outline: medium none;
+            width: 15px;
+            &:before {
+                color: $gris;
+                content: "•";                
+                font-size: 12px;
+                height: 12px;
+                left: 0;
+                line-height: 12px;
+                position: absolute;
+                text-align: center;
+                top: 0;
+                width: 15px;
+            }
+       
+        }    
+        &.slick-active button::before {
+            color: $gris;
+            opacity: 1;
+        }
+    }
+}   
+ 
+.btn-slick-left,.btn-slick-right{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px; 
+    border: none;     
+    overflow: hidden; 
+    width: 30px;
+    height: 60px; 
+    z-index: 10;
+}
+.btn-slick-left{
+    left: 0;
+    background-position: -308px -124px;
+}
+.btn-slick-right{
+    right: 0;
+    background-position: -359px -124px;
+} 

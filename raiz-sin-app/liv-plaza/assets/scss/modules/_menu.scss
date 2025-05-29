@@ -1,0 +1,94 @@
+ $bp_menu: 1024px;
+ .main-nav{
+  @include edNav(right, $bp_menu);        
+  height: auto !important; 
+  margin-top: 60px;
+  @include from(m){
+    margin-top: 68px;
+  }
+  @include from($bp_menu){
+    margin-top: 8px;
+  }
+  @include to($bp_menu){
+    width: 100%; 
+    right: -100%;
+  }
+}
+.container-navtoggle{
+  position: absolute;
+  top: 65px;
+  right: 20px; 
+  @include from(360px){ 
+    right: 25px;
+  }
+  @include from(m){  
+    top: 65px; 
+  }
+
+}
+.nav-toggle{
+  @include navToggle(20px, $third-color);
+  @include showTo($bp_menu );  
+}
+.main-menu {
+  
+  @include edMenu($bp_menu);   
+  background-color: $second-color;  
+  @include from($bp_menu){
+    background-color: transparent;
+  }
+  @include from(l){
+    max-width: 520px;
+    float: right;
+  }
+  li{
+    text-align: center;
+    a{
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      //text-align: right;
+      //padding-right: 0;
+      @include from($bp_menu){
+        border-right: 1px solid $color-menu;
+        color: $color-menu;
+        line-height: 1;        
+        margin-top: 15px;
+        font-size: 13px;
+      }
+      @include from(l){   
+        margin-top: 10px;
+      }
+      @include from(1280px){ 
+        margin-top: 20px;
+      }
+      @include from(xl){  
+        font-size: 14px;
+      }
+      
+      &:hover{
+        @include from(l){
+          color: lighten($color-menu, 20%);
+        }
+      }
+      // &:before{
+      //   content: '|';
+      //   display: inline-block;
+      //   position: absolute;
+      //   top: -1px;
+      //   left: 0;
+      //   font-size: 0.875em;
+      // }
+    }
+    &:last-child{
+      a{ 
+          @include from($bp_menu){
+            border-right: none;
+            padding-left: 0;   
+            padding-right: 0;   
+            text-align: right;
+          }
+      }
+    }
+  }
+}

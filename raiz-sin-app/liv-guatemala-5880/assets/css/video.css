@@ -1,0 +1,234 @@
+.header {
+  background: transparent url("../img/hero-mobile.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 615px;   
+}
+.site-header.header{
+  padding-top: 0;
+    padding-bottom: 0;
+}
+  @media screen and (min-width: 640px) {
+    .header {
+      background-image: url("../img/hero-tablet.jpg");
+      height: 770px; } }
+  @media screen and (min-width: 1024px) {
+    .header {
+      background-image: url("../img/hero.jpg");
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (min-width: 1440px) {
+    .header {
+      /*height: 1080px;*/ } }
+.header .content-header {
+    position: absolute;
+    width: 100%;
+    z-index: 3; }
+.header .content-header .header-top {
+      max-height: 130px;
+      background-color: rgba(0, 0, 0, 0.3); }
+      @media screen and (min-width: 1024px) {
+        .header .content-header .header-top {
+          max-height: 204px; } }
+      .header .content-header .header-top > div {
+        padding-top: 15px; }
+        .header .content-header .header-top > div:first-child {
+          padding-left: 0px;
+          padding-bottom: 30px; }
+          .header .content-header .header-top > div:first-child svg{
+            max-width: 380px;
+           }
+          @media screen and (min-width: 360px) {
+            .header .content-header .header-top > div:first-child {
+              padding-left: 0px; } }
+          @media screen and (min-width: 640px) {
+            .header .content-header .header-top > div:first-child {
+              padding-bottom: 50px; } }
+          @media screen and (min-width: 1024px) {
+            .header .content-header .header-top > div:first-child {
+              padding-left: 6.5% !important;
+              width: 47.91%;
+              padding-top: 30px; } }
+          @media screen and (min-width: 1440px) {
+            .header .content-header .header-top > div:first-child {
+              padding-left: 11% !important;
+              padding-top: 30px; } }
+
+        @media screen and (min-width: 1024px) {
+          .header .content-header .header-top > div:last-child {
+            padding-right: 9% !important;
+            width: 52.09%; } }
+        @media screen and (min-width: 1440px) {
+          .header .content-header .header-top > div:last-child {
+            padding-right: 12.91% !important; } }
+        .header .content-header .header-top > div .txtright {
+          position: absolute;
+          padding: 10px 20px 0 0;
+          top: 0;
+          right: 0; }
+          @media screen and (min-width: 360px) {
+            .header .content-header .header-top > div .txtright {
+              padding: 12px 25px 0 0; } }
+          @media screen and (min-width: 1024px) {
+            .header .content-header .header-top > div .txtright {
+              position: initial;
+              padding: 0; } }
+.header .hero-img {
+  visibility: hidden; }
+
+.header .header-video, .header video, .header #ytplayer {
+  height: 100%; }
+
+.header .text-video {
+  padding-top: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  text-align: center; }
+
+@media screen and (min-width: 640px) {
+  .header .text-video {
+    padding-top: 12.5%; } }
+
+@media screen and (min-width: 1440px) {
+  .header .text-video {
+    padding-top: 260px; } }
+
+.header .text-video h2, .header .text-video p {
+  color: #fff; }
+
+.header .text-video h2 {
+  font-size: 28.95px;
+  line-height: 1.3em;
+  margin-bottom: 15px; }
+.header .text-video h2 .book{
+  font-family: 'gravity-book';
+  font-weight: 400;
+}
+
+@media screen and (min-width: 640px) {
+  .header .text-video h2 {
+    font-size: 53px; } }
+
+.header .text-video p {
+  font-size: 15px; }
+
+@media screen and (min-width: 640px) {
+  .header .text p {
+    font-size: 22px; } }
+
+.btn{
+  background-color: #97b23c;
+  color: #fff;
+}
+.header .text-video .btn {
+  padding: 5px 10px 5px 35px;
+  margin-top: 70px; }
+
+.header .text-video .btn svg path {
+  fill: #fff; -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;}
+.header .text-video .btn:hover path {
+  fill: #fff; }
+
+
+
+.header .text-video .btn span, .header .text-video .btn svg {
+  display: inline-block;
+  vertical-align: middle; }
+.header.site-header .main-menu{
+    background-color: #000;
+}
+.main-nav { 
+    margin-top: 70px;
+}
+.container-navtoggle{
+  top: 60px;
+  right: 25px;
+}
+.nav-toggle{
+    -webkit-box-shadow: 0 4px #97b23c inset;
+    box-shadow: 0 4px #97b23c inset; 
+}
+.nav-toggle:before, .nav-toggle:after{
+  background-color: #97b23c;
+}
+.header.site-header .main-menu li a{
+    color: #fff;
+}
+.header.site-header .tel{
+    color: #fff ;
+    border-color: transparent;
+    background-color: #97b23c;
+}
+.header.site-header .tel .phone-svg{
+    fill: #fff;
+}
+.header.site-header .tel:hover {
+    color: #fff !important;
+    border-color: #fff;
+}
+.header.site-header .tel:hover .phone-svg { 
+    fill: #fff;
+}
+.main-menu li a{
+  border-right: 1px solid #fff;
+}
+.site{
+  padding-top: 0;
+} 
+.site-header > div > div{
+  padding-top: 0;
+}
+.site-header > div > div:last-child{
+  padding-right: 0% !important;
+  width: 100%;
+}
+
+ 
+.site-header > div > div:first-child {
+    padding-left: 0% !important;
+    width: auto ; 
+}
+@media screen and (min-width: 960px){
+   .main-nav {
+      margin-top: 8px;
+  }
+  .header.site-header .main-menu{
+    background-color: transparent;
+  }  
+}
+
+.embed-vimeo{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px){
+  .embed-vimeo{ 
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+  }
+  .embed-vimeo iframe,.embed-vimeo object,.embed-vimeo embed{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }   
+}

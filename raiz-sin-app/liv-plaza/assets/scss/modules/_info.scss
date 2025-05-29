@@ -1,0 +1,47 @@
+//informacion del departamento
+.info{ 
+    padding-top: 50px; 
+    .floor-info, .unit-info, .floor-street{
+        color: #fff;
+        font-family: 'gravity-bold';
+        font-size: 1.68em;
+        margin: 0;
+        line-height: 1;
+        text-transform: uppercase;
+        @include from(l){
+            font-size: 2.4375em;
+        }
+        @include from(l){
+            font-size: 2.6875em;
+        }
+    }
+    .floor-street{
+        font-family: 'gravity-book'; 
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .unit-info{ 
+        font-family: 'gravity-light';
+        font-weight: 300;
+    }
+    .description-info{
+        p{
+            font-family: 'gravity-book';
+            font-weight: 300;
+            font-size: 0.925em;
+            text-transform: uppercase;
+            color:#fff;
+            @include from(l){                 
+                margin: 10px 0;
+            }
+            @include from(xl){
+                font-size: 1.0625em;
+                margin: 15px 0;
+            }
+            span{
+                font-family: 'gravity-bold';
+            }   
+            
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.widget{
+	color: #fff;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 0 40px;
+	height: 200px;
+	@include from(m){
+		padding: 0 50px;
+		height: 220px;
+	}
+	@include from(l){
+		height: 240px;
+		padding: 0 60px;
+	}
+	@include from(xl){
+		height: 270px;
+		padding: 0 70px;
+	}
+	&.widget-marron{
+    	//background: $marron-claro;		
+	}
+	span{
+		display: block;
+		font-size: 24px;
+		@include from(m){
+			font-size: 28px;
+		}
+		@include from(l){
+			font-size: 31px;
+		}
+		@include from(xl){
+			font-size: 36px;
+		}
+		&.bold{
+			font-family: 'gravity-bold';
+		}
+		&.light{
+			font-family: 'gravity-light';
+		}
+		
+	}
+}

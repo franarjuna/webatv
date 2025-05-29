@@ -1,0 +1,162 @@
+.table-floors{     
+    border-collapse: separate;
+    border-spacing: 7px;
+    margin: 0 auto;
+    @include from(m){
+        margin: 0;
+        border-spacing: 8px;
+    }
+    @include from(l){
+        border-spacing: 10px;
+    }
+    td{
+        width: 60px;
+        height: 50px; 
+        color: #000204;
+        font-size: 15px; 
+        @include from(m){
+            width: 50px;
+            height: 40px;
+        }
+        @include from(l){
+            width: 60px;
+            height: 50px;
+            font-size: 16px;
+        }
+        @include from(xl){
+            width: 70px;
+            height: 60px;
+            font-size: 18px;    
+        }
+        span{
+            line-height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;             
+        }
+        &[rowspan="2"]{
+            span{
+                //line-height: 75px;
+                @include from(m){
+                   // height: 125px;
+                }
+            }
+        }
+        &.empty-td{
+            width: 25px;
+            @include from(m){
+                width: 30px;
+            }
+            @include from(1280px){
+                width: 50px; 
+            }
+        }
+    } 
+    
+    .dpto{
+        background-color: rgba($btn-dpto, 0.8) ;
+        cursor:pointer;
+        &:hover{
+            color: #4d4d4d;
+            background-color: $btn-dpto;
+        }
+        &.two-amb{
+            background-color: rgba(#c69c6d, 0.8) ;
+            &:hover{ 
+                background-color: #c69c6d;
+            }
+        }
+        &.three-amb-terraza{
+            background-color: rgba(#6f5d4f, 0.8) ;
+            color: #fff;
+            height: 120px;            
+            @include from(360px){                
+                height: 120px;
+            }
+            @include from(m){                
+                height: 120px;
+            }
+            @include from(l){                
+                height: 150px;
+            }
+            @include from(xl){                
+                height: 180px;
+            }
+            &:hover{ 
+                background-color: #6f5d4f;
+            }
+        }
+        &.local{
+            background-color: rgba(#998675, 0.8) ;
+            &:hover{ 
+                background-color: #998675;
+            }            
+        }
+        &.two-floor{
+            height: 80px;              
+            @include from(l){                
+                height: 100px;
+            }
+            @include from(xl){                
+                height: 120px;
+            }
+        }
+        &.td-edificio{
+            background-color: rgba($first-color, 0.8);
+            color: #fff;
+            &:hover{
+                background-color: $first-color;
+            }
+        }
+    }
+    .btn-floor{ 
+        background-color: rgba(#e5e4e2, 0.8);  
+    }    
+    .btn-floor, .dpto{
+        text-align: center;
+        color: #000204;           
+        text-transform: uppercase;        
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-1-5{
+        width: calc(50% - 5px);
+        float: left;
+        margin-right: 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }  
+} 
+.btn-edificio{
+    display: none;
+    padding: 5px 8px;
+    @include from(m){
+        display: block;
+    }
+    @include from(l){
+        padding: 5px 10px;
+    }
+    > div{
+        background-color: rgba($first-color, 0.8);
+        color: #fff;
+        height: 40px;
+        width: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 40px;  
+        cursor: pointer;
+        &:hover{
+            background-color: $first-color;
+        }
+        @include from(l){
+            height: 50px;
+            line-height: 50px;
+        }
+        @include from(xl){
+            line-height: 60px;
+            height: 60px;
+        } 
+    }
+}

@@ -1,0 +1,303 @@
+/* ===========================
+   Tools/Helpers
+   =========================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+ 
+.alignleft {
+    display: inline;
+    float: left;
+}
+.alignright {
+    display: inline;
+    float: right;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.black{
+    color: #000;
+}
+.txtleft{
+  text-align:left;
+}
+.txtright{
+  text-align:right;
+}
+.txtcenter{
+    text-align: center;
+}
+.txtinitial{
+    text-align: initial;
+}
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.relative{
+    position: relative;
+}
+.block{
+    display: block !important;
+}
+ 
+.table{
+    display: table;
+    width: 100%;
+    border-collapse:collapse;
+
+    height: 100%;
+}
+.table-row{
+    display: table-row;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: top; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+ 
+.overflow-hidden{
+    overflow: hidden;
+}
+.overflow-y-auto{
+    overflow: auto;
+}
+ 
+.hidden-mobile{
+    display: none;
+    @include from(m){
+        display: block;
+    }
+}
+.hidden-desktop{
+    display: block;
+    @include from(m){
+        display: none;
+    }
+}
+.heading{
+    color: $first-color;
+    font-size: 30px;
+    font-family: 'gravity-regular';
+    font-weight: 300;
+    text-transform: uppercase; 
+    line-height: 1.1875em; 
+    display: block;
+    @include from(360px){
+        font-size: 33px;
+    }
+    @include from(m){
+        font-size: 36px;
+    }
+    @include from(xl){
+        font-size: 43px;
+    } 
+}
+.heading-big{  
+    color: $first-color;
+    font-family: 'gravity-regular';
+    font-size: 67.69px;
+    text-transform: uppercase;
+    font-weight: 300;
+    @include from(l){
+        font-size: 35px;
+    }
+    @include from(xl){
+        font-size: 94.05px;
+    } 
+    
+}
+.custom-heading{  
+    color: $first-color;
+    font-family: 'gravity-regular';
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;
+    @include from(l){
+        font-size: 35px;
+    }
+    @include from(xl){
+        font-size: 39px;
+    } 
+    
+}
+.small-line{
+    background-color: $first-color;
+    width: 115px;
+    height: 2px;
+}
+.regular{  
+    font-family: 'gravity-regular';
+}
+.light{  
+    font-family: 'gravity-light';
+}
+.bold{
+    font-family: 'gravity-bold';
+}
+.book{
+    font-family: 'gravity-book';
+    font-weight: 300;
+}
+.only-desktop{ 
+    @include to(l){
+        display: none !important;
+    }
+}
+.only-mobile{    
+    @include from(m){
+        display: none !important;
+    }
+}
+.mobile-tablet{
+    @include from(l){
+        display: none !important;
+    }
+}
+.from-tablet{
+    display: none;
+    @include from(m){
+        display: block;
+    }
+}
+
+.br-d{ 
+    @include from(l){
+        display: initial !important;
+    }
+}
+.br-mobile{
+    display: block;
+    @include from(l){
+        display: none;
+    }
+}
+.br-desktop{
+    display: none;
+    @include from(l){
+        display: block;
+    }
+}
+.bg-gray-light{
+    background-color: #d0c9be;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.span-col-3{grid-column: span 3 / auto;}
+
+.span-col-2{grid-column: span 2 / auto;}
+
+.span-row-2{grid-row: span 2 / auto;}
+
+.span-row-3{grid-row: span 3 / auto;}
