@@ -79,7 +79,7 @@
   });
 </script>
 <?php if (isset($haymapa)) { ?>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-upgt1kmDXq3urcj8QqF3zTfzPLpQNVg&callback=initMap"> </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<?php $_ENV['GOOGLE_APP_KEY']; ?>&callback=initMap"> </script>
   <script>
     // Initialize and add the map
     function initMap() {
