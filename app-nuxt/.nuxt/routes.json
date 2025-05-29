@@ -1,0 +1,128 @@
+[
+  {
+    "name": "arquitectura",
+    "path": "/arquitectura",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\arquitectura\\\\index.vue",
+    "chunkName": "pages/arquitectura/index",
+    "_name": "_3003d4a6"
+  },
+  {
+    "name": "atv",
+    "path": "/atv",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\atv.vue",
+    "chunkName": "pages/atv",
+    "_name": "_0ac7b568"
+  },
+  {
+    "name": "bienestar",
+    "path": "/bienestar",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\bienestar.vue",
+    "chunkName": "pages/bienestar",
+    "_name": "_76a64ef0"
+  },
+  {
+    "name": "contacto",
+    "path": "/contacto",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\contacto.vue",
+    "chunkName": "pages/contacto",
+    "_name": "_4546b714"
+  },
+  {
+    "name": "dialogos",
+    "path": "/dialogos",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\dialogos\\\\index.vue",
+    "chunkName": "pages/dialogos/index",
+    "_name": "_8683ab62"
+  },
+  {
+    "name": "gracias",
+    "path": "/gracias",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\gracias.vue",
+    "chunkName": "pages/gracias",
+    "_name": "_76052997"
+  },
+  {
+    "name": "liv",
+    "path": "/liv",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\liv\\\\index.vue",
+    "chunkName": "pages/liv/index",
+    "_name": "_111b7800"
+  },
+  {
+    "name": "publicaciones",
+    "path": "/publicaciones",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\publicaciones\\\\index.vue",
+    "chunkName": "pages/publicaciones/index",
+    "_name": "_341e9b4e"
+  },
+  {
+    "name": "sens",
+    "path": "/sens",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\sens\\\\index.vue",
+    "chunkName": "pages/sens/index",
+    "_name": "_dcd178f8"
+  },
+  {
+    "name": "urbanismo",
+    "path": "/urbanismo",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\urbanismo\\\\index.vue",
+    "chunkName": "pages/urbanismo/index",
+    "_name": "_ebc602ca"
+  },
+  {
+    "name": "admin-login",
+    "path": "/admin/login",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\admin\\\\login.vue",
+    "chunkName": "pages/admin/login",
+    "_name": "_068ffe3e"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_c6a9f88a"
+  },
+  {
+    "name": "arquitectura-slug",
+    "path": "/arquitectura/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\arquitectura\\\\_slug.vue",
+    "chunkName": "pages/arquitectura/_slug",
+    "_name": "_33711736"
+  },
+  {
+    "name": "dialogos-slug",
+    "path": "/dialogos/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\dialogos\\\\_slug.vue",
+    "chunkName": "pages/dialogos/_slug",
+    "_name": "_89f0edf2"
+  },
+  {
+    "name": "liv-slug",
+    "path": "/liv/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\liv\\\\_slug.vue",
+    "chunkName": "pages/liv/_slug",
+    "_name": "_1488ba90"
+  },
+  {
+    "name": "publicaciones-slug",
+    "path": "/publicaciones/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\publicaciones\\\\_slug.vue",
+    "chunkName": "pages/publicaciones/_slug",
+    "_name": "_3267fa06"
+  },
+  {
+    "name": "sens-slug",
+    "path": "/sens/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\sens\\\\_slug.vue",
+    "chunkName": "pages/sens/_slug",
+    "_name": "_e03ebb88"
+  },
+  {
+    "name": "urbanismo-slug",
+    "path": "/urbanismo/:slug",
+    "component": "C:\\\\Users\\\\franc\\\\OneDrive\\\\Documentos\\\\webdocs\\\\ATV\\\\web\\\\atv\\\\pages\\\\urbanismo\\\\_slug.vue",
+    "chunkName": "pages/urbanismo/_slug",
+    "_name": "_ef33455a"
+  }
+]

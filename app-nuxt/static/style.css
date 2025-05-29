@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+* {
+  font-family: 'NeueMontrealRegular';
+  color: #bfbfbf;
+}
+
+.slick-dots {
+  bottom: 10px !important;
+}
+.slick-dots li {
+  width: 30px !important;
+  opacity: 0.4 !important;
+}
+.slick-dots li.slick-active {
+  opacity: 0.9 !important;
+  width: 30px;
+}
+
+.custom-dot {
+  width: 32px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-size: 1px;
+}
+
+.slick-prev {
+  width: 32px !important;
+  height: 32px !important;
+  border-color: #000 !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -31px !important;
+  border-bottom: 4px solid !important;
+  border-left: 4px solid !important;
+  transform: rotate(45deg) !important;
+  left: 19px !important;
+  color: rgb(229, 231, 235) !important;
+  z-index: 100 !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: '' !important;
+}
+.slick-next {
+  width: 32px !important;
+  height: 32px !important;
+  border-color: #000 !important;
+  position: absolute !important;
+  top: 50% !important;
+  margin-top: -31px !important;
+  border-bottom: 4px solid !important;
+  border-left: 4px solid !important;
+  transform: rotate(-135deg) !important;
+  right: 19px !important;
+  color: rgb(229, 231, 235) !important;
+  z-index: 100 !important;
+}
+
+.pastilla {
+  background: #e1e0dc;
+  color: gray;
+}
+.contenido a {
+  text-decoration: underline;
+}

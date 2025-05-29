@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'NeueMontrealRegular';
+    src: url('fonts/NeueMontrealRegular.eot');
+    src: url('fonts/NeueMontrealRegular.eot') format('embedded-opentype'),
+         url('fonts/NeueMontrealRegular.woff2') format('woff2'),
+         url('fonts/NeueMontrealRegular.woff') format('woff'),
+         url('fonts/NeueMontrealRegular.ttf') format('truetype'),
+         url('fonts/NeueMontrealRegular.svg#NeueMontrealRegular') format('svg');
+}

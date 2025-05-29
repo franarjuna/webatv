@@ -1,0 +1,104 @@
+{
+  "Citas": {
+    "description": "Auto imported from components/3citas.vue"
+  },
+  "Carousel": {
+    "description": "Auto imported from components/Carousel.vue"
+  },
+  "CenterSlider": {
+    "description": "Auto imported from components/CenterSlider.vue"
+  },
+  "Close": {
+    "description": "Auto imported from components/Close.vue"
+  },
+  "Columna": {
+    "description": "Auto imported from components/Columna.vue"
+  },
+  "Compartir": {
+    "description": "Auto imported from components/Compartir.vue"
+  },
+  "ContentSlider": {
+    "description": "Auto imported from components/ContentSlider.vue"
+  },
+  "CustomSlider": {
+    "description": "Auto imported from components/CustomSlider.vue"
+  },
+  "Damero": {
+    "description": "Auto imported from components/Damero.vue"
+  },
+  "Dialogo": {
+    "description": "Auto imported from components/Dialogo.vue"
+  },
+  "DobleTexto": {
+    "description": "Auto imported from components/DobleTexto.vue"
+  },
+  "Equipo": {
+    "description": "Auto imported from components/Equipo.vue"
+  },
+  "EquipoLista": {
+    "description": "Auto imported from components/EquipoLista.vue"
+  },
+  "Floatingbtn": {
+    "description": "Auto imported from components/Floatingbtn.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "Imagen": {
+    "description": "Auto imported from components/Imagen.vue"
+  },
+  "ImagenFondo": {
+    "description": "Auto imported from components/ImagenFondo.vue"
+  },
+  "ImagenSlider": {
+    "description": "Auto imported from components/ImagenSlider.vue"
+  },
+  "LivBloque": {
+    "description": "Auto imported from components/LivBloque.vue"
+  },
+  "Loading": {
+    "description": "Auto imported from components/Loading.vue"
+  },
+  "Masonry": {
+    "description": "Auto imported from components/Masonry.vue"
+  },
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "ProjectInfo": {
+    "description": "Auto imported from components/ProjectInfo.vue"
+  },
+  "Proyecto3Bloques": {
+    "description": "Auto imported from components/Proyecto3Bloques.vue"
+  },
+  "Proyecto5Bloques": {
+    "description": "Auto imported from components/Proyecto5Bloques.vue"
+  },
+  "SensBloque": {
+    "description": "Auto imported from components/SensBloque.vue"
+  },
+  "Slider": {
+    "description": "Auto imported from components/Slider.vue"
+  },
+  "Texto": {
+    "description": "Auto imported from components/Texto.vue"
+  },
+  "TextoDestacado": {
+    "description": "Auto imported from components/TextoDestacado.vue"
+  },
+  "TextoFoto": {
+    "description": "Auto imported from components/TextoFoto.vue"
+  },
+  "TextoImagenDialogo": {
+    "description": "Auto imported from components/TextoImagenDialogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "Videon": {
+    "description": "Auto imported from components/Videon.vue"
+  }
+}
